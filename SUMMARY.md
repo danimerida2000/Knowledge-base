@@ -1,4 +1,8 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Página inicial](README.md)
+
+## Kafka
+
+* [Introduction](kafka/introduction.md)
 
