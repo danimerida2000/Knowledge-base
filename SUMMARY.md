@@ -5,4 +5,5 @@
 ## Kafka
 
 * [Introduction](kafka/introduction.md)
+* [test](kafka/test.md)
 
