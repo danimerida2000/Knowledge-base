@@ -4,7 +4,7 @@
 
 ## Kafka
 
-* [Introducción](kafka/kafka-introduction-es.md)
+* [Echemos un vistazo](kafka/kafka-introduction.md)
 
 ## OpenShift
 

@@ -5,5 +5,5 @@ description: >-
   nos permite el desarrollo de aplicaciones por eventos.
 ---
 
-# Introducción
+# Echemos un vistazo
 
