@@ -10,9 +10,9 @@ description: >-
 ## Main topics 
 
 * Kafka 
-  * Let's take a look 
+  * [Let's take a look](https://docs.marlonmerida.com/kafka/lets-take-a-look) 
 * OpenShift 
-  * Let's take a look
+  * [Let's take a look](https://docs.marlonmerida.com/openshift/lets-take-a-look)
 
 
 
