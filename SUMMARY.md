@@ -1,9 +1,12 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Knowledge base](README.md)
 
 ## Kafka
 
-* [Introduction](kafka/introduction.md)
-* [test](kafka/test.md)
+* [Let's take a look](kafka/introduction.md)
+
+## OpenShift
+
+* [Let's take a look](openshift/lets-take-a-look.md)
 
