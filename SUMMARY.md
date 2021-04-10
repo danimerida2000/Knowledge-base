@@ -4,9 +4,9 @@
 
 ## Kafka
 
-* [Echemos un vistazo](kafka/kafka-introduction.md)
+* [Echemos un vistazo](kafka/lets-take-a-look.md)
 
 ## OpenShift
 
-* [Echemos un vistazo](openshift/echemos-un-vistazo.md)
+* [Echemos un vistazo](openshift/lets-take-a-look.md)
 
