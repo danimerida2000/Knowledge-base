@@ -4,7 +4,7 @@
 
 ## Kafka
 
-* [Let's take a look](kafka/kafka-introduction.md)
+* [Let's take a look](kafka/lets-take-a-look.md)
 
 ## OpenShift
 
