@@ -8,7 +8,7 @@ description: >-
 
 ## Conceptos claves
 
-* Es un proyecto open source que actualmente se llama OKD o Origin Community Distribution.
+* Es un proyecto open source que actualmente se llama OKD ú Origin Community Distribution.
 * Beneficios
   * Podemos definir recursos públicos o privados.
   * Incluye bare metal \(Sin sistema operativo base\) o hardware virtualizado que podría estar en una nube local o con un proveedor \(AWS, GCP, Azure, IBM, etc\).
