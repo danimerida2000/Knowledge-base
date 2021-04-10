@@ -1,25 +1,18 @@
-# Initial page
+---
+description: >-
+  The goal of this site is to share knowledge easily and concretely,  the
+  technology evolves day by day that is the reason why it is important to
+  transmit accurate and relevant information.
+---
 
-## Getting Super Powers
+# Knowledge base
 
-Becoming a super hero is a fairly straight forward process:
+## Main topics 
 
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+* Kafka 
+  * Let's take a look 
+* OpenShift 
+  * Let's take a look
 
 
 
