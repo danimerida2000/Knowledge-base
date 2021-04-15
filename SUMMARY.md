@@ -10,3 +10,7 @@
 
 * [Echemos un vistazo](openshift/lets-take-a-look.md)
 
+## OAuth 2.0 and OpenID Connect
+
+* [Echemos un vistazo](oauth-2.0-and-openid-connect/lets-take-a-look.md)
+
