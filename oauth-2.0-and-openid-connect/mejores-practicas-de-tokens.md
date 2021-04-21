@@ -9,6 +9,7 @@ description: >-
 
 ### **Algunos puntos importantes a considerar:**
 
+* Oauth no es un protocolo de autenticación, sino se le delega el control de acceso de recursos, para ello tenemos la alternativa de utilizar OpenID Connect \(OIDC\), que es una especificación complementaria, o sea, una capa arriba de Oauth para manejar la autenticación.
 * La firma \(signature\) debe revelarse sólo a los servicios que lo necesitan.
 * No agregar datos sensitivos al payload, ya que es fácil decodificar el token.
 * Solamente agregar el mínimo de claims, con esto mejoraremos el rendimiento y seguridad de la información que vamos a exponer.
@@ -34,6 +35,12 @@ description: >-
   * Resource Owner password
   * Device authorization
 * Hay que tener ciertas consideraciones con el acceso offline, ya que no debería de retornar el refresh token en el payload.
+
+### Validación de JWT
+
+* Usar string opacos o un JWT con información básica del usuario.
+* Validar y parsear la petición del JWT con un middleware o alguna librería con el algoritmo \(asimétricos/simétricos\) de la firma \(signature\).
+* Validar todos los claims cómo expiración, issuers y la audiencia.
 
 
 
