@@ -13,4 +13,5 @@
 ## OAuth 2.0 and OpenID Connect
 
 * [Echemos un vistazo](oauth-2.0-and-openid-connect/lets-take-a-look.md)
+* [Mejores prácticas de tokens](oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md)
 
