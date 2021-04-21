@@ -42,5 +42,16 @@ description: >-
 * Validar y parsear la petición del JWT con un middleware o alguna librería con el algoritmo \(asimétrico/simétrico\) de la firma \(signature\).
 * Validar todos los claims cómo expiración, issuers y la audiencia.
 
+### Algoritmos de firma \(Signing algorithms\)
+
+* Firman los tokens emitidos para nuestras aplicaciones y son parte del JWT para verificar que el remitente \(sender\) del token es quien dice ser y que no haya cambiado.
+* RS256 \(RSA con SHA-256\)
+  * Es un algoritmo asimétrico, eso quiere decir que tiene 2 claves, una pública y otra privada.
+  * La clave privada permanece secreta, es usada para generar la firma y el que consume el JWT obtiene la llave pública de los endpoints de configuración \(discovery\) para validar la misma.
+* HS256 \(HMAC con SHA-256\)
+  * Es un algoritmo simétrico, solamente existe una llave privada y es compartida entre 2 partes interesadas \(parties\).
+  * La misma clave es utilizada para firmar y validar.
+* Recomiendo utilizar RS256, para garantizar que el que emite el token \(Auth Server\) sea el único que pueda firmar los tokens, mientras que cualquiera pueda validar con la llave pública.
+
 
 
