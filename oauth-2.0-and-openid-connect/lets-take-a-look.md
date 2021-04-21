@@ -17,6 +17,6 @@ description: >-
     * Provee el manejo de sesiones.
     * Se extiende del protocolo de autorización OAuth 2.0, eso quiere decir que nos permite tener un single sign-on \(Inicio de sesión\) usando OAuth.
 * **Autorización**
-  * Proceso que otorga permisos a la parte autenticada \(party\), y especifica a qué datos puedes acceder y que puedes hacer con ellos.
+  * Proceso que otorga permisos a la parte autenticada \(party\), y especifica a que datos puedes acceder y que puedes hacer con ellos.
   * Comúnmente se abrevia AuthZ.
 
