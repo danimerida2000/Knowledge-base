@@ -39,7 +39,7 @@ description: >-
 ### Validación de JWT
 
 * Usar string opacos o un JWT con información básica del usuario.
-* Validar y parsear la petición del JWT con un middleware o alguna librería con el algoritmo \(asimétricos/simétricos\) de la firma \(signature\).
+* Validar y parsear la petición del JWT con un middleware o alguna librería con el algoritmo \(asimétrico/simétrico\) de la firma \(signature\).
 * Validar todos los claims cómo expiración, issuers y la audiencia.
 
 
