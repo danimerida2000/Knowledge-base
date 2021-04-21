@@ -51,7 +51,7 @@ description: >-
 * HS256 \(HMAC con SHA-256\)
   * Es un algoritmo simétrico, solamente existe una llave privada y es compartida entre 2 partes interesadas \(parties\).
   * La misma clave es utilizada para firmar y validar.
-* Recomiendo utilizar RS256, para garantizar que el que emite el token \(Auth Server\) sea el único que pueda firmar los tokens, mientras que cualquiera pueda validar con la llave pública.
+* Recomiendo utilizar RS256, para garantizar que el emisor del token \(Auth Server\) sea el único que pueda firmar los tokens, mientras que cualquiera pueda validar con la llave pública.
 
 
 
