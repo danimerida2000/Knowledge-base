@@ -25,7 +25,7 @@ description: >-
 
 ### Autenticación basada en token \(token-based authentication\)
 
-* Todas las peticiones al API que estamos invocando, el token se transfiere en el header como Authorization, por lo regular el estándar es JSON web token.
+* Todas las peticiones al API que estamos invocando, el token se transfiere en el header como Authorization, por lo regular el estándar es JSON Web Token.
 
 ### Refresh token
 
