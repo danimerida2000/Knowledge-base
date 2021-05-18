@@ -4,9 +4,9 @@
 
 ## Kafka
 
-* [Let's take a look](kafka/lets-take-a-look.md)
+* [Sneak peek](kafka/sneak-peek.md)
 
 ## OpenShift
 
-* [Let's take a look](openshift/lets-take-a-look.md)
+* [Sneak peek](openshift/sneak-peek.md)
 

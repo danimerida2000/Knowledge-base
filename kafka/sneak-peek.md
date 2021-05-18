@@ -5,5 +5,5 @@ description: >-
   applications.
 ---
 
-# Let's take a look
+# Sneak peek
 
