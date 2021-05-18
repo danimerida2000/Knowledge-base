@@ -22,4 +22,7 @@ description: >-
 * **Autorización**
   * Proceso que otorga permisos a la parte autenticada \(party\), y especifica a que datos puedes acceder y que puedes hacer con ellos.
   * Comúnmente se abrevia AuthZ.
+  * Open Authorization \(Oauth\) 1
+    * Es el estándar original para accesos delegados, básicamente el usuario otorga acceso a su información entre aplicaciones sin exponer sus credenciales.
+  * 
 
