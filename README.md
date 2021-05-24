@@ -9,18 +9,18 @@ description: >-
 
 ## Temas principales
 
-* Kafka
+* **Kafka**
   * Echemos un vistazo
-* OpenShift
+* **OpenShift**
   * Echemos un vistazo
-* Oauth y OpenID Connect
+* **Oauth y OpenID Connect**
   * Echemos un vistazo
   * Mejores prácticas de ¿Cómo manejar tokens?
   * Glosario
-* Node.js
+* **Node.js**
   * Echemos un vistazo
-* Saml 2.0
+* **Saml 2.0**
   * Echemos un vistazo
-* Owasp
+* **Owasp**
   * Echemos un vistazo
 
