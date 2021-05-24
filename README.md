@@ -19,8 +19,8 @@ description: >-
   * Glosario
 * **Node.js**
   * Echemos un vistazo
-* **Saml 2.0**
+* **SAML 2.0**
   * Echemos un vistazo
-* **Owasp**
+* **OWASP**
   * Echemos un vistazo
 
