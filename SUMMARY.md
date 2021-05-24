@@ -13,7 +13,7 @@
 ## OAuth 2.0 and OpenID Connect
 
 * [Echemos un vistazo](oauth-2.0-and-openid-connect/lets-take-a-look.md)
-* [Mejores prácticas de ¿cómo manejar tokens?](oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md)
+* [Mejores prácticas de ¿Cómo manejar tokens?](oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md)
 * [Glosario](oauth-2.0-and-openid-connect/glosario.md)
 
 ## Node.js

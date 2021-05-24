@@ -5,7 +5,7 @@ description: >-
   access token o api key.
 ---
 
-# Mejores prácticas de ¿cómo manejar tokens?
+# Mejores prácticas de ¿Cómo manejar tokens?
 
 ### **Algunos puntos importantes a considerar:**
 
