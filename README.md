@@ -13,4 +13,14 @@ description: >-
   * Echemos un vistazo
 * OpenShift
   * Echemos un vistazo
+* Oauth y OpenID Connect
+  * Echemos un vistazo
+  * Mejores prácticas de ¿Cómo manejar tokens?
+  * Glosario
+* Node.js
+  * Echemos un vistazo
+* Saml 2.0
+  * Echemos un vistazo
+* Owasp
+  * Echemos un vistazo
 
