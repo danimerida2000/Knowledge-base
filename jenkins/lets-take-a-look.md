@@ -25,7 +25,7 @@
   * Capacidades de scripting avanzadas, alta flexibilidad.
   * Complicado al iniciar.
 * Declarativo
-  * Recién se agregó funcionalidad.
+  * Recién se agregó esa funcionalidad.
   * Fácil de comenzar, pero no tan poderosa como escribir un script.
   *  Estructura predefinida.
   * 
