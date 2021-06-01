@@ -21,5 +21,13 @@ description: >-
 5. Si en algún momento deseas desinstalar la versión de node, ejecuta lo siguiente: nvm uninstall --lts, para información detallada de nvm, puedes consultar [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 6. Para verificar la versión de node: **node -v** o también **node --version**
 
+### **Windows**
+
+1. A diferencia de nvm para linux o macOS, en windows existe nvs \(Node version switcher\), para instalarlo es necesario descargar el instalador MSI: [https://github.com/jasongin/nvs/releases](https://github.com/jasongin/nvs/releases)
+2. Ejecuta el archivo MSI y seguir los pasos para instalarlo.
+3. Ejecuta en una terminal o command prompt para agregar la última versión LTS: **nvs add lts**
+4. Para activar la nueva versión, ejecuta lo siguiente: **nvs use lts**
+5. Para verificar la versión de node: **node -v**
+
 
 
