@@ -9,8 +9,15 @@ description: >-
 
 ## Objetivos
 
-* Conocer todos los parámetros en línea de comando de Node y Chrome V8.
+* Conocer todos los argumentos en línea de comando de Node y runtime engine V8.
 * Comprender la importancia de la ejecución de dichos comandos.
+
+
+
+## Visualizar argumentos con --help
+
+* Para visualizar todos los argumentos de node, es necesario ejecutar **node --help.**
+* Ahora si deseamos conocer los argumentos del motor de ejecución V8 \(Runtime engine\), ejecutar node --v8-options.
 
 
 
