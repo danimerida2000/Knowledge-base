@@ -17,7 +17,14 @@ description: >-
 ## Visualizar argumentos con --help
 
 * Para visualizar todos los argumentos de node, es necesario ejecutar **node --help.**
+
+![](../.gitbook/assets/image%20%281%29.png)
+
 * Ahora si deseamos conocer los argumentos del motor de ejecución V8 \(Runtime engine\), ejecutar node --v8-options.
+
+![](../.gitbook/assets/image%20%282%29.png)
+
+
 
 
 
