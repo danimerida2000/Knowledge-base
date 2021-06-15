@@ -20,7 +20,6 @@
 
 * [Echemos un vistazo](node.js/lets-take-a-look.md)
 * [Node binary executable](node.js/node-binary-executable.md)
-* [Precarga de módulos](node.js/preloading-modules.md)
 
 ## SAML 2.0
 
