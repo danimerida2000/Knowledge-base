@@ -54,6 +54,8 @@ Con el siguiente argumento `-r` o `--require` se puede precargar un módulo.
 
 La precarga de módulos son útiles cuando se utilizan módulos de consumo, como por ejemplo: el módulo dotenv.
 
+## Límite de pila de datos \(Stack trace\)
+
 
 
 \*\*\*\*
