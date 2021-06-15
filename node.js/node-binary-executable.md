@@ -42,5 +42,5 @@ Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
-
+> Todos los módulos del Core de Node están accesibles dentro del contexto de evaluación del código.
 
