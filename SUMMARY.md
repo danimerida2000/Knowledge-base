@@ -43,5 +43,5 @@
 
 ## Bash scripting
 
-* [Untitled](bash-scripting/untitled.md)
+* [Echemos un vistazo](bash-scripting/lets-take-a-look.md)
 
