@@ -62,9 +62,9 @@ Si deseamos modificar el límite, habría que cambiar el flag **`--stack-trace-l
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
-Establecer el límite de stack trace a un número superior que la cantidad de call frames garantiza que se mostrará todo el stack; ejemplo: **`node --stack-trace-limit=1000 index.js`**
+Si deseamos establecer el límite de stack trace a un número superior que la cantidad de call frames nos garantizará que se mostrará todo el stack de errores; ejemplo: **`node --stack-trace-limit=1000 index.js`**
 
-Es recomendable utilizar esta sobreescritura con fines de desarrollo, ya que en producción podría retener logs innecesarios.
+Es recomendable utilizar esta sobreescritura en un ambiente de desarrollo, ya que en producción podría retener logs innecesarios.
 
  
 
