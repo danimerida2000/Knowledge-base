@@ -19,6 +19,8 @@ description: >-
   * Glosario
 * **Node.js**
   * Echemos un vistazo
+  * Node binary executable
+  * Depuración y diagnóstico
 * **SAML 2.0**
   * Echemos un vistazo
 * **OWASP**

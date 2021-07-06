@@ -5,7 +5,7 @@ description: >-
   y nos permite diagnosticar todo el proceso
 ---
 
-# Depuración y diagnostico
+# Depuración y diagnóstico
 
 ## Objetivos
 
