@@ -45,3 +45,7 @@
 
 * [Echemos un vistazo](bash-scripting/lets-take-a-look.md)
 
+## Terraform
+
+* [Echemos un vistazo](terraform/lets-take-a-look.md)
+
