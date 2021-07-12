@@ -49,9 +49,13 @@ Si deseamos que haga una pausa en excepciones detectadas, debemos dar click en *
 
 > Está funcionalidad es útil para localizar excepciones dentro del código, ya que nos muestra la pila de llamadas \(Call Stack\).
 
+![](../.gitbook/assets/image%20%2814%29.png)
+
+Agreguemos un breakpoint y veamos el comportamiento del call stack:
+
+> Después de agregar el breakpoint con un click sobre la línea que deseamos evaluar, y damos click en el primer botón \(azul\), se reanudará la ejecución del programa e iniciará la trazabilidad de ejecución en el panel de call stack.
+
 ![](../.gitbook/assets/image%20%2813%29.png)
-
-
 
 
 
