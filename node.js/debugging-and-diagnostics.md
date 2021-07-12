@@ -25,7 +25,15 @@ Si no utilizamos los flags anteriores, la aplicación se inicializará por compl
 
 **Ejemplo utilizando Chrome Devtools:**
 
-\*\*\*\*
+Vamos a crear un pequeño programa con el algoritmo recursivo de fibonacci.
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+Ejecutamos en modo inspección:
+
+> Después de ejecutar el comando **`node --inspect-brk index.js`**, el protocolo de depuración remota usa WebSockets \(ws://\), así es como Chrome detectará que el depurador está escuchando automáticamente.
+
+![](../.gitbook/assets/image%20%2810%29.png)
 
 
 
