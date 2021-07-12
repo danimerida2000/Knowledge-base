@@ -19,7 +19,7 @@ Node.js soporta el protocolo de depuración remota como chrome DevTools.
 
 Para activar el modo inspección: **`node --inspect index.js`**
 
-Activar el modo inspección pero iniciando con un breakpoint\(Inspect Break mode\) activo al inicio del programa: **`node --inspect-brk index.js`**
+Activar el modo inspección pero iniciando con un breakpoint \(Inspect Break mode\) activo al inicio del programa: **`node --inspect-brk index.js`**
 
 Si no utilizamos los flags anteriores, la aplicación se inicializará por completo y estará realizando tareas asíncronas antes de que pueda establecer los breakpoints.
 
@@ -31,7 +31,7 @@ Vamos a crear un pequeño programa con el algoritmo recursivo de fibonacci.
 
 Ejecutamos en modo inspección:
 
-> Después de ejecutar el comando **`node --inspect-brk index.js`**, el protocolo de depuración remota usa WebSockets \(ws://\), así es como Chrome detectará que el depurador está escuchando automáticamente.
+> Después de ejecutar el comando **`node --inspect-brk index.js`**, el protocolo de depuración remota utiliza WebSockets \(ws://\), y así es como Chrome detectará que el depurador está escuchando automáticamente.
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
@@ -44,6 +44,12 @@ Click en inspect y nos abrirá una instancia DevTools que está conectada con el
 ![](../.gitbook/assets/image%20%2810%29.png)
 
 Para mayor información acerca de otras herramientas para depurar: [https://nodejs.org/en/docs/guides/debugging-getting-started/](https://nodejs.org/en/docs/guides/debugging-getting-started/)
+
+Si deseamos que haga una pausa en excepciones detectadas, debemos dar click en **"Pause on caught exceptions":**
+
+> Está funcionalidad es útil para localizar excepciones dentro del código, ya que nos muestra la pila de llamadas \(Call Stack\).
+
+![](../.gitbook/assets/image%20%2813%29.png)
 
 
 
