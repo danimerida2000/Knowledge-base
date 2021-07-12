@@ -7,11 +7,15 @@ description: >-
 
 # Depuración y diagnóstico
 
-## Objetivos
+### Objetivos
 
 * Iniciar un proceso en modo inspect.
 * Conectar un proceso en modo inspect para depurarlo.
 * Comprender que son los breakpoints \(puntos de ruptura o interrupción\).
+
+### Inicio de modo inspección
+
+
 
 
 

@@ -7,14 +7,14 @@ description: >-
 
 # Node binary executable
 
-## Objetivos
+### Objetivos
 
 * Conocer todos los argumentos en línea de comando de Node y runtime engine V8.
 * Comprender la importancia de la ejecución de dichos comandos.
 
 
 
-## Visualizar argumentos con --help
+### Visualizar argumentos con --help
 
 * Para visualizar todos los argumentos de node, es necesario ejecutar **`node --help`.**
 
@@ -24,11 +24,11 @@ description: >-
 
 ![](../.gitbook/assets/image%20%282%29.png)
 
-## Revisando sintaxis
+### Revisando sintaxis
 
 Para revisar la sintaxis sin ejecutar la aplicación, podemos ejecutar el comando **`node --check index.js`** o también **`node -c index.js`**, si todo está bien la consola se mostrará vacía, de lo contrario nos mostrará los errores.
 
-## Evaluando dinámicamente el código
+### Evaluando dinámicamente el código
 
 Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-p`** o **`--print`**, ahora si solamente deseamos evaluar pero no imprimir el resultado usamos el argumento **`-e`** o **`--eval`**.
 
@@ -44,7 +44,7 @@ Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-
 
 > Todos los módulos del Core de Node están accesibles dentro del contexto de evaluación del código.
 
-## Precarga de módulos
+### Precarga de módulos
 
 Con el siguiente argumento `-r` o `--require` se puede precargar un módulo.
 
@@ -54,7 +54,7 @@ Con el siguiente argumento `-r` o `--require` se puede precargar un módulo.
 
 La precarga de módulos son útiles cuando se utilizan módulos de consumo, como por ejemplo: el módulo dotenv.
 
-## Límite de pila de datos \(Stack trace\)
+### Límite de pila de datos \(Stack trace\)
 
 Son generados por cualquier error, usualmente contiene los últimos 10 stack frames \(funciones que invocan\) en donde captura el error.
 
