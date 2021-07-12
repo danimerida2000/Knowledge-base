@@ -27,13 +27,25 @@ Si no utilizamos los flags anteriores, la aplicación se inicializará por compl
 
 Vamos a crear un pequeño programa con el algoritmo recursivo de fibonacci.
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 Ejecutamos en modo inspección:
 
 > Después de ejecutar el comando **`node --inspect-brk index.js`**, el protocolo de depuración remota usa WebSockets \(ws://\), así es como Chrome detectará que el depurador está escuchando automáticamente.
 
+![](../.gitbook/assets/image%20%2812%29.png)
+
+Abrimos Chrome e ingresamos a chrome://inspect/\#devices:
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+Click en inspect y nos abrirá una instancia DevTools que está conectada con el proceso de Node:
+
 ![](../.gitbook/assets/image%20%2810%29.png)
+
+Para mayor información acerca de otras herramientas para depurar: [https://nodejs.org/en/docs/guides/debugging-getting-started/](https://nodejs.org/en/docs/guides/debugging-getting-started/)
+
+
 
 
 
