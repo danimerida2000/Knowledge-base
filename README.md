@@ -21,6 +21,7 @@ description: >-
   * Echemos un vistazo
   * Node binary executable
   * Depuración y diagnóstico
+  * Enfoque práctico de javascript
 * **SAML 2.0**
   * Echemos un vistazo
 * **OWASP**
