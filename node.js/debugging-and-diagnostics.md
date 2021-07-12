@@ -19,7 +19,7 @@ Node.js soporta el protocolo de depuración remota como chrome DevTools.
 
 Para activar el modo inspección: **`node --inspect index.js`**
 
-Activar el modo inspección pero iniciando con un breakpoint activo al inicio del programa: **`node --inspect-brk index.js`**
+Activar el modo inspección pero iniciando con un breakpoint\(Inspect Break mode\) activo al inicio del programa: **`node --inspect-brk index.js`**
 
 Si no utilizamos los flags anteriores, la aplicación se inicializará por completo y estará realizando tareas asíncronas antes de que pueda establecer los breakpoints.
 
