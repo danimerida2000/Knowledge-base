@@ -21,6 +21,7 @@
 * [Echemos un vistazo](node.js/lets-take-a-look.md)
 * [Node binary executable](node.js/node-binary-executable.md)
 * [Depuración y diagnóstico](node.js/debugging-and-diagnostics.md)
+* [Enfoque práctico de javascript](node.js/hands-on-approach-javascript.md)
 
 ## SAML 2.0
 
