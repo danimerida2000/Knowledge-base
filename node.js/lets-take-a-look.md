@@ -6,7 +6,7 @@ description: >-
 
 # Echemos un vistazo
 
-## **Instalación**
+### **Instalación**
 
 * No es recomendable instalar node.js con un package manager como apt \(Debian/Ubuntu\), brew en macOS, Chocolatey en Windows, ya que tienden a cambiar la ubicación de archivos o carpetas binarias, y configuración no estandarizada, eso puede ocasionar problemas de compatibilidad.
 * Otro problema significativo es la instalación de módulos globales \(npm\) que requieren el uso de _**`sudo`**_ \(Root privileges\), eso no es ideal para el ambiente de un programador, ya que estaríamos otorgando privilegios a librerías de terceros que podrían vulnerar nuestra seguridad.
