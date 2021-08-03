@@ -1,3 +1,9 @@
+---
+description: >-
+  El enfoque de esta sección se centra en la comprensión de los fundamentos de
+  javascript.
+---
+
 # Enfoque práctico de javascript
 
 ### **Objetivos**
