@@ -17,8 +17,14 @@ description: >-
 Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
 * Null
+  * Usualmente describe la ausencia de un objeto.
 * Undefined
+  * Es la ausencia de un valor definido.
+  * Cualquier variable sin valor al inicializar.
+  * Cualquier expresión que intente acceder a una propiedad inexistente.
+  * Función sin una declaración **`return`**.
 * Number
+  * 
 * BigInt
 * String
 * Boolean
