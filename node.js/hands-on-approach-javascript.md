@@ -24,8 +24,10 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
   * Cualquier expresión que intente acceder a una propiedad inexistente.
   * Función sin una declaración **`return`**.
 * Number
-  * 
+  * Es un formato de punto flotante de doble precisión.
+  * Permite enteros y decimales que están dentro del rango -2^53-1 a 2^53-1.
 * BigInt
+  * 
 * String
 * Boolean
 * Symbol
