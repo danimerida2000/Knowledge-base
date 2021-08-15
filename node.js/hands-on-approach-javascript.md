@@ -154,5 +154,9 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
         `console.log(typeof fatArrowFunction.prototype) //` **`Imprime 'undefined'`**
 
+### Herencia de prototipos \(funcional\)
+
+
+
 
 
