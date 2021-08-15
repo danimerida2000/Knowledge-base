@@ -47,7 +47,7 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 ### Funciones
 
 * Una función es un objeto, que puede ser utilizado como cualquier otro valor.
-* Ejemplos:
+* **Ejemplos:**
   * **Una función que retorna otra función:**
     * `function primera () {   return function segunda () {} }`
   * **Una función transferida a otra función como argumento:**
