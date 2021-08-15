@@ -40,4 +40,9 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
   * Un objeto es un conjunto de claves y valores \(key, values\), y dentro del valor puede existir un tipo primitivo o un objeto incluyendo funciones.
   * La clave de un objeto se llama propiedad.
   * Un objeto podría tener como valor otro objeto y eso nos permite estructuras de datos anidadas \(nested\).
-* 
+  * Todos los objetos tienen prototipos.
+    * Un prototipo es una referencia implícita a otro objeto que se consulta en la búsqueda de propiedades.
+    * La herencia en javascript funciona basada en prototipos. 
+
+### Funciones
+
