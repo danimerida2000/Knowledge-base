@@ -57,20 +57,76 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
       `}, 100);`
   * **Una función asignada a un objeto:**
-    * `const obj = {`
+    * **`This`** referencia al objeto en donde la función fue invocada \(contexto\), no al objeto al que se asignó la función.
+      * `const obj = {`
 
-          `id: 12345,`
+            `id: 12345,`
 
-          `fn: function() {`
+            `fn: function() {`
 
-              `console.log(this.id);`
+                `console.log(this.id);`
 
-          `}`
+            `}`
+
+        `};`
+
+        `obj.fn(); //` **`Imprime 12345`**
+
+      * `const obj = {`
+
+            `id: 1,`
+
+            `fn: function() {`
+
+                `console.log(this.id);`
+
+            `}`
+
+        `};`
+
+        `const obj2 = {`
+
+            `id: 2,`
+
+            `fn: obj.fn`
+
+        `};`
+
+        `obj2.fn(); //` **`Imprime 2`**
+
+        `obj.fn(); //` **`Imprime 1`**
+  * **El método `call` puede ser usado para setear un contexto:**
+    * `function fn() {`
+
+          `console.log(this.id);`
+
+      `}`
+
+      `const obj1 = {`
+
+          `id: 1`
 
       `};`
 
-      `obj.fn(); // imprime 12345`
-  * 
+      `const obj2 = {`
+
+          `id: 2`
+
+      `};`
+
+      `fn.call(obj2); //` **`Imprime 2`**
+
+      `fn.call(obj1); //` **`Imprime 1`**
+
+      `fn.call({`
+
+          `id: 'testing'`
+
+      `}); //` **`Imprime testing`**
+  * **Funciones fat arrow o lambda:**
+    * Cuando la definimos sin llaves, la expresión que sigue es la que retornaremos.
+    * No tiene su propio contexto, cuando referenciamos un **`this`** buscará la función padre no-lambda.
+      * 
 
 
 
