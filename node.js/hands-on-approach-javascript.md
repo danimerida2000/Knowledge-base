@@ -126,7 +126,33 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
   * **Funciones fat arrow o lambda:**
     * Cuando la definimos sin llaves, la expresión que sigue es la que retornaremos.
     * No tiene su propio contexto, cuando referenciamos un **`this`** buscará la función padre no-lambda.
-      * 
+      * `function fn() {`
+
+            `return (offset) => {`
+
+                `console.log(this.id + offset)`
+
+            `}`
+
+        `}`
+
+        `const obj = {`
+
+            `id: 999`
+
+        `}`
+
+        `const offsetter = fn.call(obj)`
+
+        `offsetter(1) //` **`Imprime 1000 (999 + 1)`**
+    * No tiene la propiedad prototype.
+      * `function normalFunction() {}`
+
+        `const fatArrowFunction = () => {}`
+
+        `console.log(typeof normalFunction.prototype) //` **`Imprime 'object'`**
+
+        `console.log(typeof fatArrowFunction.prototype) //` **`Imprime 'undefined'`**
 
 
 
