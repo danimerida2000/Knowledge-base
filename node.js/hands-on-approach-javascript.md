@@ -201,11 +201,33 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
         * El prototipo de **`smith`** es **`salesperson`**.
         * El prototipo de **`salesperson`** es **`employee`**.
         * El prototipo de **`employee`** es **`Object.prototype`**.
+      * Los pasos que realizó el runtime de javascript para **`smith.salary();`**
+        * Verifica si `smith` tiene una propiedad `salary`; _no la tiene_.
+        * Verifica si el prototipo de `smith` \(`salesperson`\) tiene una propiedad `salary`; _no la tiene_.
+        * Verifica si el prototipo de `salesperson` \(`employee`\) tiene una propiedad `salary`; _**si la tiene**_.
   * El segundo argumento de **`Object.create`** es un objeto opcional conocido como **`Descriptor de propiedad` \(Properties descriptor\)** y contiene claves que se convertirán en el nombre de la clave del objeto creado que describe las características de las propiedades de otro objeto.
   * **`Object.getOwnPropertyDescriptor`** es utilizado para obtener un descriptor en cualquier objeto.
-  *   ![](../.gitbook/assets/image%20%2816%29.png)
+    *  `node - p "Object.getOwnPropertyDescriptor(global, 'process')"`
 
-  * aaaaaa
-* 
+       `{`
+
+           `get: [Function: get],`
+
+           `set: [Function: set],`
+
+           `enumerable: false,`
+
+           `configurable: true`
+
+       `}`
+
+
+
+      * El descriptor puede utilizar un valor de una propiedad o get/set para crear una propiedad getter/setter.
+      * Las propiedades que están asociadas con la metadata para las propiedades \(Como predeterminado están en false\):
+        * **Writeable**: Determina si la propiedad puede reasignarse.
+        * **Enumerable:**  Determina si la propiedad se enumerará, en la propiedad iterador como **`Object.keys`**.
+        * **Configurable:** Establece si el descriptor en sí puede modificarse.
+
 
 
