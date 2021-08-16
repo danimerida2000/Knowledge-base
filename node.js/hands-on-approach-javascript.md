@@ -154,7 +154,55 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
         `console.log(typeof fatArrowFunction.prototype) //` **`Imprime 'undefined'`**
 
-### Herencia de prototipos \(funcional\)
+### Herencia de prototipos
+
+* Existen varios enfoques y variaciones de cadena de prototipos.
+* Funcional:
+  * Ejemplo:
+    * `const employee = {`
+
+          `salary: function() {`
+
+              ``console.log(`Nombre: ${this.name} y gana $.3,000.00`);``
+
+          `}`
+
+      `};`
+
+      `const salesperson = Object.create(employee, {`
+
+          `sell: {`
+
+              `value: function() {`
+
+                  ``console.log(`Nombre del vendedor: ${this.name}`);``
+
+              `}`
+
+          `}`
+
+      `});`
+
+      `const smith = Object.create(salesperson, {`
+
+          `name: {`
+
+              `value: 'Smith Peterson'`
+
+          `}`
+
+      `});`
+
+      `smith.sell(); // Imprime` **`Nombre del vendedor: Smith Peterson`**
+
+      `smith.salary(); // imprime` **`Nombre: Smith Peterson y gana $.3,000.00`**
+
+      * Describiendo la cadena de prototipos:
+        * El prototipo de **`smith`** es **`salesperson`**.
+        * El prototipo de **`salesperson`** es **`employee`**.
+        * El prototipo de **`employee`** es **`Object.prototype`**.
+  * El segundo argumento de **`Object.create`** es un objeto opcional conocido como **`Properties descriptor`**.
+  * 
 
 
 
