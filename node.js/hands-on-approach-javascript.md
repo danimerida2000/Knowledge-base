@@ -201,10 +201,11 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
         * El prototipo de **`smith`** es **`salesperson`**.
         * El prototipo de **`salesperson`** es **`employee`**.
         * El prototipo de **`employee`** es **`Object.prototype`**.
-  * El segundo argumento de **`Object.create`** es un objeto opcional conocido como **`Properties descriptor`**.
-  * 
+  * El segundo argumento de **`Object.create`** es un objeto opcional conocido como **`Descriptor de propiedad` \(Properties descriptor\)** y contiene claves que se convertirán en el nombre de la clave del objeto creado que describe las características de las propiedades de otro objeto.
+  * **`Object.getOwnPropertyDescriptor`** es utilizado para obtener un descriptor en cualquier objeto.
+  *   ![](../.gitbook/assets/image%20%2816%29.png)
 
-
-
+  * aaaaaa
+* 
 
 
