@@ -193,9 +193,13 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
       `});`
 
-      `smith.sell(); // Imprime` **`Nombre del vendedor: Smith Peterson`**
+      `smith.sell(); // Imprime` **`Nombre del vendedor: Smith Peterson`** ``
 
-      `smith.salary(); // imprime` **`Nombre: Smith Peterson y gana $.3,000.00`**
+      `smith.salary(); // Imprime` **`Nombre: Smith Peterson y gana $.3,000.00`**
+
+      `console.log(Object.getPrototypeOf(smith) === salesperson); // Imprime true`
+
+      `console.log(Object.getPrototypeOf(salesperson) === employee); // Imprime true`
 
       * Describiendo la cadena de prototipos:
         * El prototipo de **`smith`** es **`salesperson`**.
