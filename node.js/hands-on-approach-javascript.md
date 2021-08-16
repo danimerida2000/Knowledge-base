@@ -70,7 +70,7 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
         `};`
 
-        `obj.fn(); //` **`Imprime 12345`**
+        `obj.fn(); // 12345`
 
       * `const obj = {`
 
@@ -92,9 +92,9 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
         `};`
 
-        `obj2.fn(); //` **`Imprime 2`**
+        `obj2.fn(); // 2`
 
-        `obj.fn(); //` **`Imprime 1`**
+        `obj.fn(); // 1`
   * **El método `call` puede ser usado para setear un contexto:**
     * `function fn() {`
 
@@ -114,15 +114,15 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
       `};`
 
-      `fn.call(obj2); //` **`Imprime 2`**
+      `fn.call(obj2); // 2`
 
-      `fn.call(obj1); //` **`Imprime 1`**
+      `fn.call(obj1); // 1`
 
       `fn.call({`
 
           `id: 'testing'`
 
-      `}); //` **`Imprime testing`**
+      `}); // testing`
   * **Funciones fat arrow o lambda:**
     * Cuando la definimos sin llaves, la expresión que sigue es la que retornaremos.
     * No tiene su propio contexto, cuando referenciamos un **`this`** buscará la función padre no-lambda.
@@ -144,15 +144,15 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
         `const offsetter = fn.call(obj)`
 
-        `offsetter(1) //` **`Imprime 1000 (999 + 1)`**
+        `offsetter(1) // 1000 (999 + 1)`
     * No tiene la propiedad prototype.
       * `function normalFunction() {}`
 
         `const fatArrowFunction = () => {}`
 
-        `console.log(typeof normalFunction.prototype) //` **`Imprime 'object'`**
+        `console.log(typeof normalFunction.prototype) // 'object'`
 
-        `console.log(typeof fatArrowFunction.prototype) //` **`Imprime 'undefined'`**
+        `console.log(typeof fatArrowFunction.prototype) // 'undefined'`
 
 ### Herencia de prototipos
 
@@ -193,13 +193,13 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
       `});`
 
-      `smith.sell(); // Imprime` **`Nombre del vendedor: Smith Peterson`** ``
+      `smith.sell(); // Nombre del vendedor: Smith Peterson` 
 
-      `smith.salary(); // Imprime` **`Nombre: Smith Peterson y gana $.3,000.00`**
+      `smith.salary(); // Nombre: Smith Peterson y gana $.3,000.00`
 
-      `console.log(Object.getPrototypeOf(smith) === salesperson); // Imprime` **`true`**
+      `console.log(Object.getPrototypeOf(smith) === salesperson); // true`
 
-      `console.log(Object.getPrototypeOf(salesperson) === employee); // Imprime` **`true`**
+      `console.log(Object.getPrototypeOf(salesperson) === employee); // true`
 
       * Describiendo la cadena de prototipos:
         * El prototipo de **`smith`** es **`salesperson`**.
