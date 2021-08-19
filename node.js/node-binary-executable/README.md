@@ -30,11 +30,11 @@ Para revisar la sintaxis sin ejecutar la aplicación, podemos ejecutar el comand
 
 ### Revisaremos con detalle los siguientes temas:
 
-{% page-ref page="evaluando-dinamicamente-el-codigo.md" %}
+{% page-ref page="dynamically-evaluating-code.md" %}
 
-{% page-ref page="precarga-de-modulos.md" %}
+{% page-ref page="module-preloading.md" %}
 
-{% page-ref page="limite-de-pila-de-datos-stack-trace.md" %}
+{% page-ref page="stack-trace.md" %}
 
 
 

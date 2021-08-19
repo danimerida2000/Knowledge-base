@@ -22,9 +22,9 @@
 
 * [Echemos un vistazo](node.js/lets-take-a-look.md)
 * [Node binary executable](node.js/node-binary-executable/README.md)
-  * [Evaluando dinámicamente el código](node.js/node-binary-executable/evaluando-dinamicamente-el-codigo.md)
-  * [Precarga de módulos](node.js/node-binary-executable/precarga-de-modulos.md)
-  * [Límite de pila de datos \(Stack trace\)](node.js/node-binary-executable/limite-de-pila-de-datos-stack-trace.md)
+  * [Evaluando dinámicamente el código](node.js/node-binary-executable/dynamically-evaluating-code.md)
+  * [Precarga de módulos](node.js/node-binary-executable/module-preloading.md)
+  * [Límite de pila de datos \(Stack trace\)](node.js/node-binary-executable/stack-trace.md)
 * [Depuración y diagnóstico](node.js/debugging-and-diagnostics.md)
 * [Enfoque práctico de javascript](node.js/hands-on-approach-javascript.md)
 
