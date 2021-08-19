@@ -27,9 +27,9 @@
   * [Límite de pila de datos \(Stack trace\)](node.js/node-binary-executable/stack-trace.md)
 * [Depuración y diagnóstico](node.js/debugging-and-diagnostics.md)
 * [Enfoque práctico de javascript](node.js/hands-on-approach-javascript/README.md)
-  * [Tipos de datos](node.js/hands-on-approach-javascript/tipos-de-datos.md)
-  * [Funciones](node.js/hands-on-approach-javascript/funciones.md)
-  * [Herencia de prototipos](node.js/hands-on-approach-javascript/herencia-de-prototipos.md)
+  * [Tipos de datos](node.js/hands-on-approach-javascript/data-types.md)
+  * [Funciones](node.js/hands-on-approach-javascript/functions.md)
+  * [Herencia de prototipos](node.js/hands-on-approach-javascript/prototypal-inheritance.md)
 
 ## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
