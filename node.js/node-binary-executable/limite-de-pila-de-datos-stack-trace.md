@@ -1,7 +1,5 @@
 # Límite de pila de datos \(Stack trace\)
 
-
-
 Son generados por cualquier error, usualmente contiene los últimos 10 stack frames \(funciones que invocan\) en donde captura el error.
 
 Si deseamos modificar el límite, habría que cambiar el flag **`--stack-trace-limit`**  y es parte del motor de runtime de javascript, V8, y también puede ser encontrado en el flag **`--v8-options`:**

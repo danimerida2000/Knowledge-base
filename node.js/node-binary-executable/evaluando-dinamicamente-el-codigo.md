@@ -1,7 +1,5 @@
 # Evaluando dinámicamente el código
 
-
-
 Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-p`** o **`--print`**, ahora si solamente deseamos evaluar pero no imprimir el resultado usamos el argumento **`-e`** o **`--eval`**.
 
 **Algunos ejemplos:**
