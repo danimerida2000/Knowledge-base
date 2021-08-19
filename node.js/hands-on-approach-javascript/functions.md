@@ -72,11 +72,11 @@ fn.call({
 
 ### **Funciones fat arrow o lambda.**
 
-{% hint style="info" %}
+{% hint style="success" %}
 Cuando la definimos sin llaves, la expresión que sigue es la que retornaremos.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="success" %}
 No tiene su propio contexto, cuando referenciamos un _this_ buscará la función padre no-lambda.
 {% endhint %}
 

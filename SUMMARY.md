@@ -29,7 +29,10 @@
 * [Enfoque práctico de javascript](node.js/hands-on-approach-javascript/README.md)
   * [Tipos de datos](node.js/hands-on-approach-javascript/data-types.md)
   * [Funciones](node.js/hands-on-approach-javascript/functions.md)
-  * [Herencia de prototipos](node.js/hands-on-approach-javascript/prototypal-inheritance.md)
+  * [Herencia de prototipos](node.js/hands-on-approach-javascript/prototypal-inheritance/README.md)
+    * [Funcional](node.js/hands-on-approach-javascript/prototypal-inheritance/funcional.md)
+    * [Funciones de constructor](node.js/hands-on-approach-javascript/prototypal-inheritance/funciones-de-constructor.md)
+    * [Constructor \(Class-Syntax\)](node.js/hands-on-approach-javascript/prototypal-inheritance/constructor-class-syntax.md)
 
 ## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
