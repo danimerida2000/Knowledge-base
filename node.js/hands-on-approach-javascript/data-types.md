@@ -19,7 +19,7 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
    * Las cadenas \(String\) creadas a partir de las comilla invertidas \(backticks\) se llaman template literals o template strings, y pueden ser multilíneas y soportan interpolación \(string interpolation \[${expresión}\]\).
 6. **Boolean**
    * Tiene dos valores: **`true`** o **`false`**
-7. Symbol
+7. **Symbol**
    * Puede ser usado como una llave única en un objeto.
    * El método Symbol.for crea u obtiene un símbolo global.
 
