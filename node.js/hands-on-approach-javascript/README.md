@@ -9,8 +9,8 @@ description: >-
 ### **Objetivos**
 
 * Comprender los tipo de datos.
-* Explicar el rol del scope de closure en el manejo de sesiones.
 * Describir la herencia basada en javascript.
+* Explicar el rol del scope de closure en el manejo de sesiones.
 
 ### Revisaremos con detalle los siguientes temas:
 
