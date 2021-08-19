@@ -9,13 +9,13 @@ description: La herencia en JavaScript se logra con una cadena de prototipos.
 ```javascript
 const employee = {
     salary: function() {
-        console.log(`Nombre: ${this.name} y gana $.3,000.00`);
+        console.log(`Su salario es de $.12,000.00`);
     }
 };
 const salesperson = Object.create(employee, {
     sell: {
         value: function() {
-            console.log(`Nombre del vendedor: ${this.name}`);
+            console.log(`Es vendido por ${this.name}`);
         }
     }
 });
@@ -24,8 +24,8 @@ const smith = Object.create(salesperson, {
         value: 'Smith Peterson'
     }
 });
-smith.sell(); // Nombre del vendedor: Smith Peterson 
-smith.salary(); // Nombre: Smith Peterson y gana $.3,000.00
+smith.sell(); // Es vendido por Smith Peterson 
+smith.salary(); // Su salario es de $.12,000.00
 console.log(Object.getPrototypeOf(smith) === salesperson); // true
 console.log(Object.getPrototypeOf(salesperson) === employee); // true
 ```
