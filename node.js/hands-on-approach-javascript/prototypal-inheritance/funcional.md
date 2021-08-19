@@ -42,9 +42,11 @@ Los pasos que realizó el runtime de javascript para **`smith.salary();`**
 2. [x] Verifica si el prototipo de `smith` \(`salesperson`\) tiene una propiedad `salary`; _no la tiene_.
 3. [x] Verifica si el prototipo de `salesperson` \(`employee`\) tiene una propiedad `salary`; _**si la tiene**_.
 
-El segundo argumento de **`Object.create`** es un objeto opcional conocido como **`Descriptor de propiedad` \(Properties descriptor\)** y contiene claves que se convertirán en el nombre de la clave del objeto creado que describe las características de las propiedades de otro objeto.
+{% hint style="info" %}
+El segundo argumento de **`Object.create`** es un objeto opcional conocido como **`Descriptor de propiedades` \(Properties descriptor\)** y contiene claves que se convertirán en el nombre de la clave del objeto creado que describe las características de las propiedades de otro objeto.
+{% endhint %}
 
-**`Object.getOwnPropertyDescriptor`** es utilizado para obtener un descriptor en cualquier objeto.
+**`Object.getOwnPropertyDescriptor`** es utilizado para obtener un descriptor en cualquier objeto:
 
 ```bash
 node - p "Object.getOwnPropertyDescriptor(global, 'process')"
