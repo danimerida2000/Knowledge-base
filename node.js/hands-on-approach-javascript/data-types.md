@@ -28,25 +28,12 @@ description: 'Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitiv
    * El método Symbol.for crea u obtiene un símbolo global.
 
 {% hint style="info" %}
-Los demás tipos de datos son objetos.
-{% endhint %}
-
-{% hint style="info" %}
-Un objeto es un conjunto de claves y valores \(key, values\), y dentro del valor puede existir un tipo primitivo o un objeto incluyendo funciones.
-{% endhint %}
-
-{% hint style="info" %}
-La clave de un objeto se llama propiedad.
-{% endhint %}
-
-{% hint style="info" %}
-Un objeto podría tener como valor otro objeto y eso nos permite estructuras de datos anidadas \(nested\).
-{% endhint %}
-
-{% hint style="info" %}
-Todos los objetos tienen prototipos:
-
-* Un prototipo es una referencia implícita a otro objeto que se consulta en la búsqueda de propiedades.
-* La herencia en javascript funciona basada en prototipos. 
+* Los demás tipos de datos son objetos.
+* Un objeto es un conjunto de claves y valores \(key, values\), y dentro del valor puede existir un tipo primitivo o un objeto incluyendo funciones.
+* La clave de un objeto se llama propiedad.
+* Un objeto podría tener como valor otro objeto y eso nos permite estructuras de datos anidadas \(nested\).
+* Todos los objetos tienen prototipos: 
+  * Un prototipo es una referencia implícita a otro objeto que se consulta en la búsqueda de propiedades. 
+  * La herencia en javascript funciona basada en prototipos.
 {% endhint %}
 
