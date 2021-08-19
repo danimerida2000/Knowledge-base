@@ -44,7 +44,7 @@ Un objeto podría tener como valor otro objeto y eso nos permite estructuras de 
 {% endhint %}
 
 {% hint style="info" %}
-Todos los objetos tienen prototipos.
+Todos los objetos tienen prototipos:
 
 * Un prototipo es una referencia implícita a otro objeto que se consulta en la búsqueda de propiedades.
 * La herencia en javascript funciona basada en prototipos. 

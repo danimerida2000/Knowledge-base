@@ -95,7 +95,7 @@ const offsetter = fn.call(obj)
 offsetter(1) // 1000 (999 + 1)
 ```
 
-No tiene la propiedad prototype.
+#### No tiene la propiedad prototype.
 
 ```javascript
 function normalFunction() {}
