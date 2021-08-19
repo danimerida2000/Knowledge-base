@@ -31,8 +31,8 @@
 ## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
 * [Echemos un vistazo](oauth-2.0-and-openid-connect/lets-take-a-look.md)
-* [Mejores prácticas de cómo manejar tokens](oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md)
-* [Glosario](oauth-2.0-and-openid-connect/glosario.md)
+* [Mejores prácticas de cómo manejar tokens](oauth-2.0-and-openid-connect/token-best-practices.md)
+* [Glosario](oauth-2.0-and-openid-connect/glossary.md)
 
 ## OpenShift
 
