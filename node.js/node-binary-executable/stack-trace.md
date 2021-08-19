@@ -8,5 +8,7 @@ Si deseamos modificar el límite, habría que cambiar el flag **`--stack-trace-l
 
 Si deseamos establecer el límite de stack trace a un número superior que la cantidad de call frames nos garantizará que se mostrará todo el stack de errores; ejemplo: **`node --stack-trace-limit=1000 index.js`**
 
-> **Es recomendable utilizar esta sobreescritura en un ambiente de desarrollo, ya que en producción podría retener logs innecesarios.**
+{% hint style="info" %}
+Es recomendable utilizar esta sobreescritura en un ambiente de desarrollo, ya que en producción podría retener logs innecesarios.
+{% endhint %}
 

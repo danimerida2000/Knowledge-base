@@ -2,7 +2,7 @@
 
 Con el siguiente argumento `-r` o `--require` se puede precargar un módulo.
 
-**Ejemplo:**
+#### **Ejemplo:**
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
