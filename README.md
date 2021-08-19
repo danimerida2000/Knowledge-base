@@ -9,21 +9,39 @@ description: >-
 
 ## Temas principales
 
-* **Kafka**
-  * Echemos un vistazo
-* **OpenShift**
-  * Echemos un vistazo
-* **Oauth y OpenID Connect**
-  * Echemos un vistazo
-  * Mejores prácticas de ¿Cómo manejar tokens?
-  * Glosario
-* **Node.js**
-  * Echemos un vistazo
-  * Node binary executable
-  * Depuración y diagnóstico
-  * Enfoque práctico de javascript
-* **SAML 2.0**
-  * Echemos un vistazo
-* **OWASP**
-  * Echemos un vistazo
+### **Kafka**
+
+{% page-ref page="kafka/lets-take-a-look.md" %}
+
+### **OpenShift**
+
+{% page-ref page="openshift/lets-take-a-look.md" %}
+
+### **Oauth y OpenID Connect**
+
+{% page-ref page="oauth-2.0-and-openid-connect/lets-take-a-look.md" %}
+
+{% page-ref page="oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md" %}
+
+{% page-ref page="oauth-2.0-and-openid-connect/glosario.md" %}
+
+### **Node.js**
+
+{% page-ref page="node.js/lets-take-a-look.md" %}
+
+{% page-ref page="node.js/node-binary-executable/" %}
+
+{% page-ref page="node.js/debugging-and-diagnostics.md" %}
+
+{% page-ref page="node.js/hands-on-approach-javascript.md" %}
+
+### **SAML 2.0**
+
+{% page-ref page="saml-2.0/lets-take-a-look.md" %}
+
+### **OWASP**
+
+{% page-ref page="owasp/lets-take-a-look.md" %}
+
+
 
