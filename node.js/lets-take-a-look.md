@@ -34,7 +34,7 @@ nvm -version
 nvm install --lts
 ```
 
-Si en algún momento deseas desinstalar la versión de node:
+#### Si en algún momento deseas desinstalar la versión de node:
 
 ```bash
 nvm uninstall --lts
