@@ -20,6 +20,8 @@ description: >-
 
 {% page-ref page="prototypal-inheritance/" %}
 
+{% page-ref page="closure-scope.md" %}
+
 
 
 
