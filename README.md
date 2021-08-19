@@ -33,7 +33,7 @@ description: >-
 
 {% page-ref page="node.js/debugging-and-diagnostics.md" %}
 
-{% page-ref page="node.js/hands-on-approach-javascript.md" %}
+{% page-ref page="node.js/hands-on-approach-javascript/" %}
 
 ### **Oauth 2.0 / OpenID Connect**
 
