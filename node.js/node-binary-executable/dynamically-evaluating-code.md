@@ -2,7 +2,7 @@
 
 Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-p`** o **`--print`**, ahora si solamente deseamos evaluar pero no imprimir el resultado usamos el argumento **`-e`** o **`--eval`**.
 
-**Algunos ejemplos:**
+#### **Ejemplos:**
 
 * Convertir 2e5 milisegundos a minutos: **`node --print '2e5/(1e3*60)'`**.
 
@@ -12,5 +12,7 @@ Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-
 
 ![](../../.gitbook/assets/image%20%284%29.png)
 
-> Todos los módulos del Core de Node están accesibles dentro del contexto de evaluación del código.
+{% hint style="info" %}
+Todos los módulos del Core de Node están accesibles dentro del contexto de evaluación del código.
+{% endhint %}
 
