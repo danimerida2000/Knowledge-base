@@ -227,8 +227,8 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
 
 
 
-      * El descriptor puede utilizar un valor de una propiedad o get/set para crear una propiedad getter/setter.
-      * Las propiedades que están asociadas con la metadata para las propiedades \(Como predeterminado están en false\):
+      * El descriptor puede utilizar un valor de una propiedad o get/set para crear propiedades getter/setter.
+      * Las propiedades que están asociadas con la metadata del objeto \(Como predeterminado están en false\):
         * **Writeable**: Determina si la propiedad puede reasignarse.
         * **Enumerable:**  Determina si la propiedad se enumerará, en la propiedad iterador como **`Object.keys`**.
         * **Configurable:** Establece si el descriptor en sí puede modificarse.
