@@ -8,7 +8,7 @@ description: 'Una función es un objeto, que puede ser utilizado como cualquier 
 
 ### **Una función que retorna otra función.**
 
-```text
+```javascript
 function primera () {
   return function segunda () {}
 }
@@ -16,7 +16,7 @@ function primera () {
 
 ### **Una función transferida a otra función como argumento.**
 
-```text
+```javascript
 setTimeout(function () {
     console.log("Función como argumento");
 }, 100);
@@ -26,7 +26,7 @@ setTimeout(function () {
 
 **`This`** referencia al objeto en donde la función fue invocada \(contexto\), no al objeto al que se asignó la función.
 
-```text
+```javascript
 const obj = {
     id: 12345,
     fn: function() {
@@ -36,7 +36,7 @@ const obj = {
 obj.fn(); // 12345
 ```
 
-```text
+```javascript
 const obj = {
     id: 1,
     fn: function() {
@@ -53,7 +53,7 @@ obj.fn(); // 1
 
 ### **El método `call` puede ser usado para setear un contexto.**
 
-```text
+```javascript
 function fn() {
     console.log(this.id);
 }
@@ -82,7 +82,7 @@ No tiene su propio contexto, cuando referenciamos un _this_ buscará la función
 
 #### **Ejemplo:**
 
-```text
+```javascript
 function fn() {
     return (offset) => {
         console.log(this.id + offset)
@@ -97,7 +97,7 @@ offsetter(1) // 1000 (999 + 1)
 
 No tiene la propiedad prototype.
 
-```text
+```javascript
 function normalFunction() {}
 const fatArrowFunction = () => {}
 console.log(typeof normalFunction.prototype) // 'object'
