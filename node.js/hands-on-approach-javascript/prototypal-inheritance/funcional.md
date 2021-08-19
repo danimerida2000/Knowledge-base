@@ -38,8 +38,8 @@ console.log(Object.getPrototypeOf(salesperson) === employee); // true
 
 Los pasos que realizó el runtime de javascript para **`smith.salary();`**
 
-1. [x] Verifica si `smith` tiene una propiedad `salary`; _no la tiene_.
-2. [x] Verifica si el prototipo de `smith` \(`salesperson`\) tiene una propiedad `salary`; _no la tiene_.
+1. [x] Verifica si `smith` tiene una propiedad `salary`; _**no la tiene**_.
+2. [x] Verifica si el prototipo de `smith` \(`salesperson`\) tiene una propiedad `salary`; _**no la tiene**_.
 3. [x] Verifica si el prototipo de `salesperson` \(`employee`\) tiene una propiedad `salary`; _**si la tiene**_.
 
 {% hint style="info" %}
