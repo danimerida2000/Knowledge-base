@@ -68,7 +68,7 @@ Después de agregar el breakpoint con un click sobre la línea que deseamos eval
 En algunos casos se puede agregar un breakpoint directamente en el código, utilizando el flag **`--inspect,`** y agregándole en el código la declaración **`debugger`** \(línea 5\):
 
 {% hint style="warning" %}
-No es buena práctica utilizar esta estrategia por el impacto de rendimiento.
+No es buena práctica utilizar esta estrategia \(debugger\) por el impacto de rendimiento.
 {% endhint %}
 
 ![](../.gitbook/assets/image%20%2814%29.png)
