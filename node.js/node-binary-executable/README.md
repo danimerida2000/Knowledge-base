@@ -18,11 +18,11 @@ description: >-
 
 * Para visualizar todos los argumentos de node, es necesario ejecutar **`node --help`.**
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%281%29.png)
 
 * Ahora si deseamos conocer los argumentos del motor de ejecución V8 \(Runtime engine\), ejecutar **`node --v8-options`**.
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%282%29.png)
 
 ### Revisando sintaxis
 
@@ -36,11 +36,11 @@ Para evaluar una expresión e imprimir el resultado utilizamos el argumento **`-
 
 * Convertir 2e5 milisegundos a minutos: **`node --print '2e5/(1e3*60)'`**.
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 * Comprobamos el ejemplo anterior pero con el argumento -e o --eval: **`node --eval '2e5/(1e3*60)'`**.
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29.png)
 
 > Todos los módulos del Core de Node están accesibles dentro del contexto de evaluación del código.
 
@@ -50,7 +50,7 @@ Con el siguiente argumento `-r` o `--require` se puede precargar un módulo.
 
 **Ejemplo:**
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 La precarga de módulos son útiles cuando se utilizan módulos de consumo, como por ejemplo: el módulo dotenv.
 
@@ -60,7 +60,7 @@ Son generados por cualquier error, usualmente contiene los últimos 10 stack fra
 
 Si deseamos modificar el límite, habría que cambiar el flag **`--stack-trace-limit`**  y es parte del motor de runtime de javascript, V8, y también puede ser encontrado en el flag **`--v8-options`:**
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 Si deseamos establecer el límite de stack trace a un número superior que la cantidad de call frames nos garantizará que se mostrará todo el stack de errores; ejemplo: **`node --stack-trace-limit=1000 index.js`**
 
