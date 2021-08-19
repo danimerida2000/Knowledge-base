@@ -28,7 +28,7 @@ description: >-
 
 Para revisar la sintaxis sin ejecutar la aplicación, podemos ejecutar el comando **`node --check index.js`** o también **`node -c index.js`**, si todo está bien la consola se mostrará vacía, de lo contrario nos mostrará los errores.
 
-Revisaremos con detalle los siguientes temas:
+### Revisaremos con detalle los siguientes temas:
 
 {% page-ref page="evaluando-dinamicamente-el-codigo.md" %}
 
