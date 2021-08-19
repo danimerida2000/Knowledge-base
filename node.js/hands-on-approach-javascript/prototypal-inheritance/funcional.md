@@ -58,7 +58,7 @@ node - p "Object.getOwnPropertyDescriptor(global, 'process')"
  }
 ```
 
-El descriptor puede utilizar un valor de una propiedad o get/set para crear propiedades getter/setter.
+El descriptor puede utilizar un valor de una propiedad get/set para crear propiedades getter/setter.
 
 Las propiedades que están asociadas con la metadata del objeto \(Como predeterminado están en false\):
 
