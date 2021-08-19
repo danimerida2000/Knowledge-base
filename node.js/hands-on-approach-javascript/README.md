@@ -14,6 +14,14 @@ description: >-
 
 ### Revisaremos con detalle los siguientes temas:
 
+{% page-ref page="data-types.md" %}
+
+{% page-ref page="functions.md" %}
+
+{% page-ref page="prototypal-inheritance/" %}
+
+
+
 
 
 
