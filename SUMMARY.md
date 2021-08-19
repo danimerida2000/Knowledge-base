@@ -14,7 +14,7 @@
 
 * [Echemos un vistazo](kafka/lets-take-a-look.md)
 
-## Kubernetes/Docker
+## Kubernetes / Docker
 
 * [Echemos un vistazo](kubernetes-docker/lets-take-a-look.md)
 
@@ -28,7 +28,7 @@
 * [Depuración y diagnóstico](node.js/debugging-and-diagnostics.md)
 * [Enfoque práctico de javascript](node.js/hands-on-approach-javascript.md)
 
-## OAuth 2.0 and OpenID Connect
+## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
 * [Echemos un vistazo](oauth-2.0-and-openid-connect/lets-take-a-look.md)
 * [Mejores prácticas de cómo manejar tokens](oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md)
@@ -46,7 +46,7 @@
 
 * [Echemos un vistazo](saml-2.0/lets-take-a-look.md)
 
-## SSL/TLS
+## SSL / TLS
 
 * [Echemos un vistazo](ssl-tls/lets-take-a-look.md)
 

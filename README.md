@@ -9,21 +9,21 @@ description: >-
 
 ## Temas principales
 
+### **Bash scripting**
+
+{% page-ref page="bash-scripting/lets-take-a-look.md" %}
+
+### **Jenkins**
+
+{% page-ref page="jenkins/lets-take-a-look.md" %}
+
 ### **Kafka**
 
 {% page-ref page="kafka/lets-take-a-look.md" %}
 
-### **OpenShift**
+### **Kubernetes / Docker**
 
-{% page-ref page="openshift/lets-take-a-look.md" %}
-
-### **Oauth y OpenID Connect**
-
-{% page-ref page="oauth-2.0-and-openid-connect/lets-take-a-look.md" %}
-
-{% page-ref page="oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md" %}
-
-{% page-ref page="oauth-2.0-and-openid-connect/glosario.md" %}
+{% page-ref page="kubernetes-docker/lets-take-a-look.md" %}
 
 ### **Node.js**
 
@@ -35,13 +35,37 @@ description: >-
 
 {% page-ref page="node.js/hands-on-approach-javascript.md" %}
 
-### **SAML 2.0**
+### **Oauth 2.0 / OpenID Connect**
 
-{% page-ref page="saml-2.0/lets-take-a-look.md" %}
+{% page-ref page="oauth-2.0-and-openid-connect/lets-take-a-look.md" %}
+
+{% page-ref page="oauth-2.0-and-openid-connect/mejores-practicas-de-tokens.md" %}
+
+{% page-ref page="oauth-2.0-and-openid-connect/glosario.md" %}
+
+### **Openshift**
+
+{% page-ref page="openshift/lets-take-a-look.md" %}
 
 ### **OWASP**
 
 {% page-ref page="owasp/lets-take-a-look.md" %}
+
+### **SAML 2.0**
+
+{% page-ref page="saml-2.0/lets-take-a-look.md" %}
+
+### SSL / TLS
+
+{% page-ref page="ssl-tls/lets-take-a-look.md" %}
+
+### Terraform
+
+{% page-ref page="terraform/lets-take-a-look.md" %}
+
+
+
+
 
 
 
