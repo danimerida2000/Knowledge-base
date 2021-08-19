@@ -23,7 +23,7 @@ Javascript es un lenguaje dinámico, y cuenta con 7 tipos primitivos:
    * Puede ser usado como una llave única en un objeto.
    * El método Symbol.for crea u obtiene un símbolo global.
 
-Los demás tipos de datos son objetos:
+#### Los demás tipos de datos son objetos:
 
 * Un objeto es un conjunto de claves y valores \(key, values\), y dentro del valor puede existir un tipo primitivo o un objeto incluyendo funciones.
 * La clave de un objeto se llama propiedad.
