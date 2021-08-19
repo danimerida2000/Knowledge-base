@@ -1,6 +1,6 @@
 # Herencia de prototipos
 
-Existen varios enfoques y variaciones de cadena de prototipos.
+#### Existen varios enfoques y variaciones de cadena de prototipos:
 
 {% page-ref page="funcional.md" %}
 
