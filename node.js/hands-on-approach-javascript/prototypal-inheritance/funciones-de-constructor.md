@@ -52,7 +52,7 @@ Descripción de la cadena de prototipos:
 
 El uso del método **call** en una función permite que el objeto **this** de la función a la que se llama se establezca a través del primer argumento pasado a call.
 
-Para el tiempo de ejecución \(runtime\) que soporta ES6+, podemos obtener lo mismo con **Object.create**:
+Para el runtime que soporta ES6+, podemos obtener lo mismo con **Object.create**:
 
 ```javascript
 function Salesperson(name) {
