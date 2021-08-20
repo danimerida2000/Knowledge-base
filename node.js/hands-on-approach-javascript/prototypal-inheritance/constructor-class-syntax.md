@@ -139,3 +139,5 @@ console.log(Object.getPrototypeOf(salesperson) === employee); // true
 {% endtab %}
 {% endtabs %}
 
+El equivalente de **`super(name);`** es **`Employee.call(this, name);`** es una forma genérica de llamar al constructor padre.
+
