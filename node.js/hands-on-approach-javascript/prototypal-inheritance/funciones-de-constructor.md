@@ -10,16 +10,20 @@ El enfoque del constructor para crear una cadena de prototipos es definir propie
 
 #### Ejemplo:
 
+{% hint style="info" %}
+Usaremos **Pascal Case** para las funciones que serán llamadas con new, ya que es una convención y es recomendado.
+{% endhint %}
+
 ```javascript
-function employee(name) {
+function Employee(name) {
   this.name = name;
 }
 
-employee.prototype.salary = function () {
+Employee.prototype.salary = function () {
   console.log(`Su salario es de $.12,000.00`);
 };
 
-function salesperson(name) {
+function Salesperson(name) {
   employee.call(this, name);
 }
 
@@ -29,17 +33,18 @@ function inherit(proto) {
   return new ChainLink();
 }
 
-salesperson.prototype = inherit(employee.prototype);
+Salesperson.prototype = inherit(Employee.prototype);
 
-salesperson.prototype.sell = function () {
+Salesperson.prototype.sell = function () {
   console.log(`Es vendido por ${this.name}`);
 };
 
-const smith = new salesperson('Smith Peterson');
+const smith = new Salesperson('Smith Peterson');
 smith.sell(); // Es vendido por Smith Peterson
 smith.salary(); // Su salario es de $.12,000.00
 console.log(Object.getPrototypeOf(smith) === salesperson.prototype); // true
 console.log(Object.getPrototypeOf(salesperson.prototype) === employee.prototype); // true
-
 ```
+
+
 
