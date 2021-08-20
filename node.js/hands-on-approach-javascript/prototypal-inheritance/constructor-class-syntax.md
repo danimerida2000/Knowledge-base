@@ -41,6 +41,35 @@ Descripción de la cadena de prototipos:
 * El prototipo de **`employee`** es **`Object.prototype`**.
 
 {% hint style="info" %}
-La palabra clave extends hace que la herencia sea mucho más sencilla. La clase Salesperson extiende a Employee asegurará que el prototipo de Salesperson.prototype será Employee.prototype.
+La palabra reservada **extends** hace que la herencia sea mucho más sencilla. La clase Salesperson extiende a Employee asegurará que el prototipo de Salesperson.prototype será Employee.prototype.
 {% endhint %}
+
+#### Comparación:
+
+{% tabs %}
+{% tab title="Class-Syntax" %}
+```javascript
+class Employee {
+  constructor(name) {
+    this.name = name;
+  }
+  salary() {
+    console.log(`Su salario es de $.12,000.00`);
+  }
+}
+```
+{% endtab %}
+
+{% tab title="Constructor function" %}
+```javascript
+function Employee(name) {
+  this.name = name;
+}
+
+Employee.prototype.salary = function () {
+  console.log(`Su salario es de $.12,000.00`);
+};
+```
+{% endtab %}
+{% endtabs %}
 
