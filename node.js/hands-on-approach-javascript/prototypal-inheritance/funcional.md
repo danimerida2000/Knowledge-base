@@ -8,23 +8,23 @@ description: La herencia en JavaScript se logra con una cadena de prototipos.
 
 ```javascript
 const employee = {
-    salary: function() {
-        console.log(`Su salario es de $.12,000.00`);
-    }
+  salary: function () {
+    console.log(`Su salario es de $.12,000.00`);
+  }
 };
 const salesperson = Object.create(employee, {
-    sell: {
-        value: function() {
-            console.log(`Es vendido por ${this.name}`);
-        }
+  sell: {
+    value: function () {
+      console.log(`Es vendido por ${this.name}`);
     }
+  }
 });
 const smith = Object.create(salesperson, {
-    name: {
-        value: 'Smith Peterson'
-    }
+  name: {
+    value: 'Smith Peterson'
+  }
 });
-smith.sell(); // Es vendido por Smith Peterson 
+smith.sell(); // Es vendido por Smith Peterson
 smith.salary(); // Su salario es de $.12,000.00
 console.log(Object.getPrototypeOf(smith) === salesperson); // true
 console.log(Object.getPrototypeOf(salesperson) === employee); // true
@@ -58,11 +58,11 @@ node - p "Object.getOwnPropertyDescriptor(global, 'process')"
  }
 ```
 
-El descriptor puede utilizar un valor de una propiedad get/set para crear propiedades getter/setter.
+El descriptor puede utilizar un valor de una propiedad get/set.
 
-Las propiedades que están asociadas con la metadata del objeto \(Como predeterminado están en false\):
+Las propiedades que están asociadas con la metadata del objeto:
 
 * **Writeable**: Determina si la propiedad puede reasignarse.
-* **Enumerable:**  Determina si la propiedad se enumerará, en la propiedad iterador como **`Object.keys`**.
-* **Configurable:** Establece si el descriptor en sí puede modificarse.
+* **Enumerable:**  Default false; determina si la propiedad se enumerará, en la propiedad iterador como **`Object.keys`**.
+* **Configurable:** Default false; establece si el descriptor en sí puede modificarse.
 
