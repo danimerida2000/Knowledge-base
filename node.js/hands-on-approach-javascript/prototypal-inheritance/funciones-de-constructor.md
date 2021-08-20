@@ -44,5 +44,45 @@ console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
 console.log(Object.getPrototypeOf(Salesperson.prototype) === Employee.prototype); // true
 ```
 
+Descripción de la cadena de prototipos:
+
+* El prototipo de **`smith`** es **`salesperson.prototype`**.
+* El prototipo de **`salesperson`** es **`employee.prototype`**.
+* El prototipo de **`employee`** es **`Object.prototype`**.
+
+El uso del método **call** en una función permite que el objeto **this** de la función a la que se llama se establezca a través del primer argumento pasado a call.
+
+Para el tiempo de ejecución \(runtime\) que soporta ES6+, podemos obtener lo mismo con **Object.create**:
+
+```javascript
+function Salesperson(name) {
+  Employee.call(this, name);
+}
+
+Salesperson.prototype = Object.create(Employee.prototype);
+
+Salesperson.prototype.sell = function () {
+  console.log(`Es vendido por ${this.name}`);
+};
+```
+
+Node.js tiene una función llamada **util.inherits**:
+
+```javascript
+const util = require('util');
+
+function Salesperson(name) {
+  Employee.call(this, name);
+}
+
+Salesperson.prototype.sell = function () {
+  console.log(`Es vendido por ${this.name}`);
+};
+
+util.inherits(Salesperson.prototype, Employee.prototype); // Object.setPrototypeOf(Salesperson.prototype, Employee.prototype)
+```
+
+
+
 
 
