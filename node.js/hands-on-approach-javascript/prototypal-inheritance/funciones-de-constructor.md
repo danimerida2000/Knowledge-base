@@ -1,11 +1,9 @@
 # Funciones de constructor
 
 {% hint style="success" %}
-Todas las funciones tienen prototipos.
-{% endhint %}
-
-{% hint style="success" %}
-El enfoque del constructor para crear una cadena de prototipos es definir propiedades en el objeto prototipo que después se llamará con la palabra clave **`new`**.
+* Todas las funciones tienen prototipos.
+* El enfoque del constructor para crear una cadena de prototipos es definir propiedades en el objeto prototipo que después se llamará con _**new**_.
+* Cada función tiene un objeto prototipo preexistente.
 {% endhint %}
 
 #### Ejemplo:
@@ -24,7 +22,7 @@ Employee.prototype.salary = function () {
 };
 
 function Salesperson(name) {
-  employee.call(this, name);
+  Employee.call(this, name);
 }
 
 function inherit(proto) {
@@ -42,8 +40,8 @@ Salesperson.prototype.sell = function () {
 const smith = new Salesperson('Smith Peterson');
 smith.sell(); // Es vendido por Smith Peterson
 smith.salary(); // Su salario es de $.12,000.00
-console.log(Object.getPrototypeOf(smith) === salesperson.prototype); // true
-console.log(Object.getPrototypeOf(salesperson.prototype) === employee.prototype); // true
+console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
+console.log(Object.getPrototypeOf(Salesperson.prototype) === Employee.prototype); // true
 ```
 
 
