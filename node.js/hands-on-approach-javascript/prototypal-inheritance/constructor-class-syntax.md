@@ -57,6 +57,22 @@ class Employee {
     console.log(`Su salario es de $.12,000.00`);
   }
 }
+
+class Salesperson extends Employee {
+  constructor(name) {
+    super(name);
+  }
+  sell() {
+    console.log(`Es vendido por ${this.name}`);
+  }
+}
+
+const smith = new Salesperson('Smith Peterson');
+
+smith.sell(); // Es vendido por Smith Peterson
+smith.salary(); // Su salario es de $.12,000.00
+console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
+console.log(Object.getPrototypeOf(Salesperson.prototype) === Employee.prototype); // true
 ```
 {% endtab %}
 
@@ -69,6 +85,29 @@ function Employee(name) {
 Employee.prototype.salary = function () {
   console.log(`Su salario es de $.12,000.00`);
 };
+
+function Salesperson(name) {
+  Employee.call(this, name);
+}
+
+function inherit(proto) {
+  function ChainLink() {}
+  ChainLink.prototype = proto;
+  return new ChainLink();
+}
+
+Salesperson.prototype = inherit(Employee.prototype);
+
+Salesperson.prototype.sell = function () {
+  console.log(`Es vendido por ${this.name}`);
+};
+
+const smith = new Salesperson('Smith Peterson');
+
+smith.sell(); // Es vendido por Smith Peterson
+smith.salary(); // Su salario es de $.12,000.00
+console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
+console.log(Object.getPrototypeOf(Salesperson.prototype) === Employee.prototype); // true
 ```
 {% endtab %}
 
@@ -79,6 +118,23 @@ const employee = {
     console.log(`Su salario es de $.12,000.00`);
   }
 };
+const salesperson = Object.create(employee, {
+  sell: {
+    value: function () {
+      console.log(`Es vendido por ${this.name}`);
+    }
+  }
+});
+const smith = Object.create(salesperson, {
+  name: {
+    value: 'Smith Peterson'
+  }
+});
+
+smith.sell(); // Es vendido por Smith Peterson
+smith.salary(); // Su salario es de $.12,000.00
+console.log(Object.getPrototypeOf(smith) === salesperson); // true
+console.log(Object.getPrototypeOf(salesperson) === employee); // true
 ```
 {% endtab %}
 {% endtabs %}
