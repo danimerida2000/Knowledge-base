@@ -38,6 +38,7 @@ Salesperson.prototype.sell = function () {
 };
 
 const smith = new Salesperson('Smith Peterson');
+
 smith.sell(); // Es vendido por Smith Peterson
 smith.salary(); // Su salario es de $.12,000.00
 console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
