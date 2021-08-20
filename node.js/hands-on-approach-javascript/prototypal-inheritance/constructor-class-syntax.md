@@ -71,5 +71,15 @@ Employee.prototype.salary = function () {
 };
 ```
 {% endtab %}
+
+{% tab title="Functional" %}
+```javascript
+const employee = {
+  salary: function () {
+    console.log(`Su salario es de $.12,000.00`);
+  }
+};
+```
+{% endtab %}
 {% endtabs %}
 
