@@ -9,7 +9,7 @@
 #### Ejemplo:
 
 {% hint style="info" %}
-Usaremos **Pascal Case** para las funciones que serán llamadas con new, ya que es una convención y es recomendado.
+Usaremos **Pascal Case** para las funciones que serán llamadas con _**new**_, ya que es una convención y es recomendado.
 {% endhint %}
 
 ```javascript
