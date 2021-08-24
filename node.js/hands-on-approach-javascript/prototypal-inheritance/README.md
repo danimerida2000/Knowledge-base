@@ -8,5 +8,123 @@
 
 {% page-ref page="constructor-class-syntax.md" %}
 
+#### Ejemplo:
+
+{% tabs %}
+{% tab title="Class-Syntax" %}
+```javascript
+const assert = require('assert');
+
+class Leopard {
+  constructor(name) {
+    this.name = name;
+  }
+  hiss() {
+    console.log(`${this.name}: hsss`);
+  }
+}
+
+class Lynx extends Leopard {
+  constructor(name) {
+    super(name);
+  }
+  purr() {
+    console.log(`${this.name}: prrr`);
+  }
+}
+
+class Cat extends Lynx {
+  constructor(name) {
+    super(`${name} the cat`);
+  }
+  meow() {
+    console.log(`${this.name}: meow`);
+  }
+}
+
+const felix = new Cat('Felix');
+felix.meow(); // Felix the cat: meow
+felix.purr(); // Felix the cat: prrr
+felix.hiss(); // Felix the cat: hsss
+
+// Prototype checks...
+
+const felixProto = Object.getPrototypeOf(felix);
+const felixProtoProto = Object.getPrototypeOf(felixProto);
+const felixProtoProtoProto = Object.getPrototypeOf(felixProtoProto);
+assert(Object.getOwnPropertyNames(felixProto).length, 1);
+assert(Object.getOwnPropertyNames(felixProtoProto).length, 1);
+assert(Object.getOwnPropertyNames(felixProtoProto).length, 1);
+assert(typeof felixProto.meow, 'function');
+assert(typeof felixProtoProto.purr, 'function');
+assert(typeof felixProtoProtoProto.hiss, 'function');
+console.log('prototype checks passed!');
+
+```
+{% endtab %}
+
+{% tab title="Constructor function" %}
+```javascript
+function Employee(name) {
+  this.name = name;
+}
+
+Employee.prototype.salary = function () {
+  console.log(`Su salario es de $.12,000.00`);
+};
+
+function Salesperson(name) {
+  Employee.call(this, name);
+}
+
+function inherit(proto) {
+  function ChainLink() {}
+  ChainLink.prototype = proto;
+  return new ChainLink();
+}
+
+Salesperson.prototype = inherit(Employee.prototype);
+
+Salesperson.prototype.sell = function () {
+  console.log(`Es vendido por ${this.name}`);
+};
+
+const smith = new Salesperson('Smith Peterson');
+
+smith.sell(); // Es vendido por Smith Peterson
+smith.salary(); // Su salario es de $.12,000.00
+console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
+console.log(Object.getPrototypeOf(Salesperson.prototype) === Employee.prototype); // true
+```
+{% endtab %}
+
+{% tab title="Functional" %}
+```javascript
+const employee = {
+  salary: function () {
+    console.log(`Su salario es de $.12,000.00`);
+  }
+};
+const salesperson = Object.create(employee, {
+  sell: {
+    value: function () {
+      console.log(`Es vendido por ${this.name}`);
+    }
+  }
+});
+const smith = Object.create(salesperson, {
+  name: {
+    value: 'Smith Peterson'
+  }
+});
+
+smith.sell(); // Es vendido por Smith Peterson
+smith.salary(); // Su salario es de $.12,000.00
+console.log(Object.getPrototypeOf(smith) === salesperson); // true
+console.log(Object.getPrototypeOf(salesperson) === employee); // true
+```
+{% endtab %}
+{% endtabs %}
+
 
 
