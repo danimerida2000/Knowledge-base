@@ -124,28 +124,52 @@ console.log('prototype checks passed!');
 
 {% tab title="Functional" %}
 ```javascript
-const employee = {
-  salary: function () {
-    console.log(`Su salario es de $.12,000.00`);
+const assert = require('assert');
+
+const leopard = {
+  hiss: function () {
+    console.log(`${this.name}: hsss`);
   }
 };
-const salesperson = Object.create(employee, {
-  sell: {
+
+const lynx = Object.create(leopard, {
+  purr: {
     value: function () {
-      console.log(`Es vendido por ${this.name}`);
+      console.log(`${this.name}: prrr`);
     }
   }
 });
-const smith = Object.create(salesperson, {
-  name: {
-    value: 'Smith Peterson'
+
+const cat = Object.create(lynx, {
+  meow: {
+    value: function () {
+      console.log(`${this.name}: meow`);
+    }
   }
 });
 
-smith.sell(); // Es vendido por Smith Peterson
-smith.salary(); // Su salario es de $.12,000.00
-console.log(Object.getPrototypeOf(smith) === salesperson); // true
-console.log(Object.getPrototypeOf(salesperson) === employee); // true
+const felix = Object.create(cat, {
+  name: {
+    value: 'Felix the cat'
+  }
+});
+
+felix.meow(); // Felix the cat: meow
+felix.purr(); // Felix the cat: prrr
+felix.hiss(); // Felix the cat: hsss
+
+// Prototype checks...
+
+const felixProto = Object.getPrototypeOf(felix);
+const felixProtoProto = Object.getPrototypeOf(felixProto);
+const felixProtoProtoProto = Object.getPrototypeOf(felixProtoProto);
+assert(Object.getOwnPropertyNames(felixProto).length, 1);
+assert(Object.getOwnPropertyNames(felixProtoProto).length, 1);
+assert(Object.getOwnPropertyNames(felixProtoProto).length, 1);
+assert(typeof felixProto.meow, 'function');
+assert(typeof felixProtoProto.purr, 'function');
+assert(typeof felixProtoProtoProto.hiss, 'function');
+console.log('prototype checks passed!');
 ```
 {% endtab %}
 {% endtabs %}
