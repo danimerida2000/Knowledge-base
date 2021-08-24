@@ -8,7 +8,7 @@
 
 {% page-ref page="constructor-class-syntax.md" %}
 
-#### Ejemplo:
+#### Después de revisar los temas que se describen anteriormente, comprenderemos el siguiente ejemplo:
 
 {% tabs %}
 {% tab title="Class-Syntax" %}
@@ -65,16 +65,18 @@ console.log('prototype checks passed!');
 
 {% tab title="Constructor function" %}
 ```javascript
-function Employee(name) {
+const assert = require('assert');
+
+function Leopard(name) {
   this.name = name;
 }
 
-Employee.prototype.salary = function () {
-  console.log(`Su salario es de $.12,000.00`);
+Leopard.prototype.hiss = function () {
+  console.log(`${this.name}: hsss`);
 };
 
-function Salesperson(name) {
-  Employee.call(this, name);
+function Lynx(name) {
+  Leopard.call(this, name);
 }
 
 function inherit(proto) {
@@ -83,18 +85,40 @@ function inherit(proto) {
   return new ChainLink();
 }
 
-Salesperson.prototype = inherit(Employee.prototype);
+Lynx.prototype = inherit(Leopard.prototype);
 
-Salesperson.prototype.sell = function () {
-  console.log(`Es vendido por ${this.name}`);
+Lynx.prototype.purr = function () {
+  console.log(`${this.name}: prrr`);
 };
 
-const smith = new Salesperson('Smith Peterson');
+function Cat(name) {
+  Lynx.call(this, `${name} the cat`);
+}
 
-smith.sell(); // Es vendido por Smith Peterson
-smith.salary(); // Su salario es de $.12,000.00
-console.log(Object.getPrototypeOf(smith) === Salesperson.prototype); // true
-console.log(Object.getPrototypeOf(Salesperson.prototype) === Employee.prototype); // true
+Cat.prototype = inherit(Lynx.prototype);
+
+Cat.prototype.meow = function () {
+  console.log(`${this.name}: meow`);
+};
+
+const felix = new Cat('Felix');
+felix.meow(); // Felix the cat: meow
+felix.purr(); // Felix the cat: prrr
+felix.hiss(); // Felix the cat: hsss
+
+// Prototype checks...
+
+const felixProto = Object.getPrototypeOf(felix);
+const felixProtoProto = Object.getPrototypeOf(felixProto);
+const felixProtoProtoProto = Object.getPrototypeOf(felixProtoProto);
+assert(Object.getOwnPropertyNames(felixProto).length, 1);
+assert(Object.getOwnPropertyNames(felixProtoProto).length, 1);
+assert(Object.getOwnPropertyNames(felixProtoProto).length, 1);
+assert(typeof felixProto.meow, 'function');
+assert(typeof felixProtoProto.purr, 'function');
+assert(typeof felixProtoProtoProto.hiss, 'function');
+console.log('prototype checks passed!');
+
 ```
 {% endtab %}
 
