@@ -34,6 +34,7 @@
     * [Funciones de constructor](node.js/hands-on-approach-javascript/prototypal-inheritance/funciones-de-constructor.md)
     * [Constructor \(Class-Syntax\)](node.js/hands-on-approach-javascript/prototypal-inheritance/constructor-class-syntax.md)
   * [Closure scope](node.js/hands-on-approach-javascript/closure-scope.md)
+* [Paquetes y dependencias](node.js/paquetes-y-dependencias.md)
 
 ## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
