@@ -3,6 +3,8 @@
 {% hint style="success" %}
 * Cuando una función está dentro de otra función, puede acceder tanto a su propio closure scope como al closure scope padre de la función externa.
 * Las reglas de closure scope aplican también a las funciones fat arrow \(=&gt;\).
+* La principal ventaja al usar closure scope para componer objetos es que elimina la complejidad de los prototipos, contexto \(this\) y la necesidad de invocar la función con _**new**_.
+* Es recomendable utilizar la composición de funciones en lugar de la herencia de prototipos y optimizar si es necesario.
 {% endhint %}
 
 #### Ejemplos:
@@ -82,8 +84,5 @@ console.log(Object.getPrototypeOf(salesperson)); // [Function]
 El ejemplo anterior no tiene una cadena de prototipos.
 {% endhint %}
 
-{% hint style="success" %}
-* La principal ventaja al usar closure scope para componer objetos es que elimina la complejidad de los prototipos, contexto \(this\) y la necesidad de invocar la función con _**new**_.
-* Es recomendable utilizar la composición de funciones en lugar de la herencia de prototipos y optimizar si es necesario.
-{% endhint %}
+
 
