@@ -25,7 +25,7 @@ description: >-
 * Comúnmente se abrevia AuthZ.
 {% endhint %}
 
-{% page-ref page="oauth-2.0.md" %}
+{% page-ref page="oauth-2.0/" %}
 
 
 

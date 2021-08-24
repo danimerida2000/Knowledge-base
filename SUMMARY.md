@@ -40,8 +40,8 @@
 
 * [Echemos un vistazo](oauth-2.0-and-openid-connect/lets-take-a-look.md)
 * [OpenID Connect](oauth-2.0-and-openid-connect/openid-connect.md)
-* [OAuth 2.0](oauth-2.0-and-openid-connect/oauth-2.0.md)
-* [Mejores prácticas de cómo manejar tokens](oauth-2.0-and-openid-connect/token-best-practices.md)
+* [OAuth 2.0](oauth-2.0-and-openid-connect/oauth-2.0/README.md)
+  * [Mejores prácticas de cómo manejar tokens](oauth-2.0-and-openid-connect/oauth-2.0/token-best-practices.md)
 * [Glosario](oauth-2.0-and-openid-connect/glossary.md)
 
 ## OpenShift
