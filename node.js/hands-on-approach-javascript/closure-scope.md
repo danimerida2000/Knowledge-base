@@ -52,3 +52,7 @@ console.log(fifi); // { id: 1, type: 'cat', name: 'Fifi' }
 * La función _**animal**_ se invoca dos veces y es asignado a _**createDog**_ y _**createCat**_. Estas funciones tienen diferentes instancias de closure scope. Los objetos _**scott**_ y _**firulais**_ son instanciados por _**createDog**_.
 {% endhint %}
 
+El siguiente ejemplo es funcionalmente equivalente y al mismo nivel de composición que los ejemplos de herencia de prototipos:
+
+
+
