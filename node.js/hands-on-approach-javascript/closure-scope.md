@@ -84,5 +84,22 @@ console.log(Object.getPrototypeOf(salesperson)); // [Function]
 El ejemplo anterior no tiene una cadena de prototipos.
 {% endhint %}
 
+Otro ejemplo implementando la función prefixer:
 
+```javascript
+'use strict';
+
+function prefixer(type) {
+  return (name) => {
+    return `${type}${name}`;
+  };
+}
+
+const sayHiTo = prefixer('Hello ');
+const sayByeTo = prefixer('Goodbye ');
+console.log(sayHiTo('Dave')); // Hello Dave
+console.log(sayHiTo('Annie')); // Hello Annie
+console.log(sayByeTo('Dave')); // Goodbye Dave
+
+```
 
