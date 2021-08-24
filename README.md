@@ -39,9 +39,11 @@ description: >-
 
 {% page-ref page="oauth-2.0-and-openid-connect/lets-take-a-look.md" %}
 
-{% page-ref page="oauth-2.0-and-openid-connect/oauth-2.0/token-best-practices.md" %}
+{% page-ref page="oauth-2.0-and-openid-connect/openid-connect.md" %}
 
-{% page-ref page="oauth-2.0-and-openid-connect/glossary.md" %}
+{% page-ref page="oauth-2.0-and-openid-connect/oauth-2.0/" %}
+
+
 
 ### **Openshift**
 
