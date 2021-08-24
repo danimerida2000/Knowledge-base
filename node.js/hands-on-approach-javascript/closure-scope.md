@@ -54,5 +54,36 @@ console.log(fifi); // { id: 1, type: 'cat', name: 'Fifi' }
 
 El siguiente ejemplo es funcionalmente equivalente y al mismo nivel de composición que los ejemplos de herencia de prototipos:
 
+```javascript
+function employee() {
+  const salary = () => {
+    console.log(`Su salario es de $.12,000.00`);
+  };
+  return { salary };
+}
 
+function salesperson(name) {
+  const sell = () => {
+    console.log(`Es vendido por ${name}`);
+  };
+  return {
+    ...employee(), // Spread operator (copy properties).
+    sell
+  };
+}
+const smith = salesperson('Smith Peterson');
+smith.sell(); // Es vendido Smith Peterson
+smith.salary(); // Su salario es de $.12,000.00
+console.log(Object.getPrototypeOf(smith)); // {}
+console.log(Object.getPrototypeOf(salesperson)); // [Function]
+```
+
+{% hint style="warning" %}
+El ejemplo anterior no tiene una cadena de prototipos.
+{% endhint %}
+
+{% hint style="success" %}
+* La principal ventaja al usar closure scope para componer objetos es que elimina la complejidad de los prototipos, contexto \(this\) y la necesidad de invocar la función con _**new**_.
+* Es recomendable utilizar la composición de funciones en lugar de la herencia de prototipos y optimizar si es necesario.
+{% endhint %}
 

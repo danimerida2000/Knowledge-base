@@ -41,7 +41,7 @@ Descripción de la cadena de prototipos:
 * El prototipo de **`employee`** es **`Object.prototype`**.
 
 {% hint style="info" %}
-La palabra reservada **extends** hace que la herencia sea mucho más sencilla. La clase Salesperson extiende a Employee asegurará que el prototipo de Salesperson.prototype será Employee.prototype.
+La palabra reservada **extends** hace que la herencia sea mucho más sencilla. La clase Salesperson extiende a Employee asegurará que el prototipo de Salesperson.prototype sea Employee.prototype.
 {% endhint %}
 
 #### Comparación:
