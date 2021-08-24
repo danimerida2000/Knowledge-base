@@ -22,7 +22,7 @@ outerFunction();
 
 {% hint style="info" %}
 * Si existiese una colisión con algún nombre de variable con la de un argumento de una función tomará la más cercana por prioridad de scope.
-* Closure scope no puede ser accesible fuera de una función \(Encapsulación de un estado privado\).
+* Closure scope no puede ser accesible fuera de una función \(Provee una encapsulación de un estado privado\).
 {% endhint %}
 
 ```javascript
@@ -49,6 +49,6 @@ console.log(fifi); // { id: 1, type: 'cat', name: 'Fifi' }
 
 {% hint style="info" %}
 * La función _**animal**_ tiene una variable _**id**_ dentro de su scope, y toma el argumento _**type**_, y retorna una función con el id, tipo y nombre, ya que tiene acceso al closure scope de la función padre.
-* 
+* La función _**animal**_ se invoca dos veces y es asignado a _**createDog**_ y _**createCat**_. Estas funciones tienen diferentes instancias de closure scope. Los objetos _**scott**_ y _**firulais**_ son instanciados por _**createDog**_.
 {% endhint %}
 
