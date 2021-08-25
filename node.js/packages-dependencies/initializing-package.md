@@ -119,8 +119,21 @@ Is this OK? (yes)
 ```
 
 {% hint style="info" %}
-Si deseamos que obtenga los valores predeterminados, usamos el flag -y \(**`npm install -y`**\)
+Si deseamos que asigne los valores predeterminados, usamos el flag -y \(**`npm install -y`**\)
 {% endhint %}
 
+#### Atributos que son generados en package.json:
 
+* name - nombre del paquete.
+* version - la versión actual del paquete.
+* description - descripción del paquete, y es usado para metanálisis en el registry.
+* main - el archivo de punto de entrada para iniciar el paquete.
+* scripts - shell scripts.
+* keywords - lista de palabras claves que mejora la visibilidad de un paquete publicado.
+* author -  el paquete del autor.
+* licencia - la licencia del paquete.
+
+{% hint style="info" %}
+Se puede ejecutar **npm init** después de la existencia del archivo package.json con el fin de actualizar cualquier atributo, inclusive es útil para leer un repositorio remoto de git y agregarlo a package.json.
+{% endhint %}
 
