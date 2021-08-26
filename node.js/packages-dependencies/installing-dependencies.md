@@ -107,7 +107,7 @@ Si existiese 2 versiones en el árbol de dependencias puede almacenar una carpet
 
 {% hint style="success" %}
 * Hay que tomar en cuenta que no todas las dependencias son requeridas para producción, algunas librerías son utilizadas para el proceso de desarrollo.
-* Cuando ejecutamos **`run npm`** solamente podremos ver el árbol de dependencias de producción.
+* Cuando ejecutamos **`run npm`** solamente podremos ver el árbol de dependencias sin considerar las dependencias de desarrollo de los paquetes instalados.
 {% endhint %}
 
 Para instalar una dependencia de desarrollo, ejecutamos **`npm install --save-dev nombre_paquete`**.
@@ -121,5 +121,26 @@ npm WARN project-test@0.1.0 No repository field.
 + json-loader@0.5.7
 added 1 package from 1 contributor and audited 25 packages in 2.697s
 found 0 vulnerabilities
+```
+
+```javascript
+➜  package-test cat package.json
+{
+  "name": "project-test",
+  "version": "0.1.0",
+  "description": "Project test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danilo Mérida",
+  "license": "MIT",
+  "dependencies": {
+    "signale": "^1.4.0"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.7"
+  }
+}
 ```
 
