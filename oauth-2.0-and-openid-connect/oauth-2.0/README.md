@@ -13,5 +13,9 @@ Los patrones de autorización son implementados haciendo cumplir las restriccion
 * Imponer el control de acceso a nivel de aplicación, como metadata, configuración, de forma declarativa o programática.
 * Aplicaciones que pueden delegar la decisión de acceso a través de servicios externos para forzar el control de acceso, comúnmente se conoce como autorización centralizada.
 
+## Mecanismos de control de acceso
+
+### Role-based access control \(RBAC\)
+
 
 

@@ -36,6 +36,7 @@
   * [Closure scope](node.js/hands-on-approach-javascript/closure-scope.md)
 * [Paquetes y dependencias](node.js/packages-dependencies/README.md)
   * [Inicializando paquetes](node.js/packages-dependencies/initializing-package.md)
+  * [Dependencias](node.js/packages-dependencies/installing-dependencies.md)
 
 ## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
