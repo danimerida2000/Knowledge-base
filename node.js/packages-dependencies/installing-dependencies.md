@@ -9,7 +9,7 @@ Para instalar una dependencia, ejecutar **`npm install nombre_paquete`**:
 #### Ejemplo:
 
 ```javascript
-➜  package-test npm install signale
+➜  package-test -> npm install signale
 npm WARN project-test@0.1.0 No repository field.
 
 + signale@1.4.0
@@ -39,7 +39,7 @@ Se actualizó package.json:
 Echemos un vistazo a la carpeta **node\_modules** y veamos el árbol de dependencias:
 
 ```javascript
-➜  package-test ls -lah node_modules
+➜  package-test -> ls -lah node_modules
 total 0
 drwxr-xr-x  26 danimerida2000  staff   832B Aug 25 19:57 .
 drwxr-xr-x   6 danimerida2000  staff   192B Aug 25 19:49 ..
@@ -70,7 +70,7 @@ drwxr-xr-x   7 danimerida2000  staff   224B Aug 25 19:29 supports-color
 ```
 
 ```javascript
-➜  package-test npm ls
+➜  package-test -> npm ls
 project-test@0.1.0 /Users/danimerida2000/Downloads/package-test
 └─┬ signale@1.4.0
   ├─┬ chalk@2.4.2
@@ -115,7 +115,7 @@ Para instalar una dependencia de desarrollo, ejecutamos **`npm install --save-de
 #### Ejemplo:
 
 ```javascript
-➜  package-test npm install --save-dev json-loader
+➜  package-test -> npm install --save-dev json-loader
 npm WARN project-test@0.1.0 No repository field.
 
 + json-loader@0.5.7
@@ -124,7 +124,7 @@ found 0 vulnerabilities
 ```
 
 ```javascript
-➜  package-test cat package.json
+➜  package-test -> cat package.json
 {
   "name": "project-test",
   "version": "0.1.0",
@@ -143,4 +143,43 @@ found 0 vulnerabilities
   }
 }
 ```
+
+```javascript
+➜  package-test -> npm ls
+project-test@0.1.0 /Users/danimerida2000/Downloads/package-test
+├── json-loader@0.5.7
+└─┬ signale@1.4.0
+  ├─┬ chalk@2.4.2
+  │ ├─┬ ansi-styles@3.2.1
+  │ │ └─┬ color-convert@1.9.3
+  │ │   └── color-name@1.1.3
+  │ ├── escape-string-regexp@1.0.5
+  │ └─┬ supports-color@5.5.0
+  │   └── has-flag@3.0.0
+  ├─┬ figures@2.0.0
+  │ └── escape-string-regexp@1.0.5 deduped
+  └─┬ pkg-conf@2.1.0
+    ├─┬ find-up@2.1.0
+    │ └─┬ locate-path@2.0.0
+    │   ├─┬ p-locate@2.0.0
+    │   │ └─┬ p-limit@1.3.0
+    │   │   └── p-try@1.0.0
+    │   └── path-exists@3.0.0
+    └─┬ load-json-file@4.0.0
+      ├── graceful-fs@4.2.8
+      ├─┬ parse-json@4.0.0
+      │ ├─┬ error-ex@1.3.2
+      │ │ └── is-arrayish@0.2.1
+      │ └── json-parse-better-errors@1.0.2
+      ├── pify@3.0.0
+      └── strip-bom@3.0.0
+```
+
+### Dependencias de producción
+
+Para ignorar las dependencias de desarrollo, usamos el flag --production.
+
+#### Ejemplo:
+
+
 
