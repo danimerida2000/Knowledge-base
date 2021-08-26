@@ -181,5 +181,41 @@ Para ignorar las dependencias de desarrollo, usamos el flag --production.
 
 #### Ejemplo:
 
+```javascript
+➜  package-test -> npm install --production
+npm WARN project-test@0.1.0 No repository field.
 
+added 24 packages from 6 contributors and audited 25 packages in 1.119s
+found 0 vulnerabilities
+```
+
+```javascript
+➜  package-test -> npm ls
+project-test@0.1.0 /Users/danimerida2000/Downloads/package-test
+└─┬ signale@1.4.0
+  ├─┬ chalk@2.4.2
+  │ ├─┬ ansi-styles@3.2.1
+  │ │ └─┬ color-convert@1.9.3
+  │ │   └── color-name@1.1.3
+  │ ├── escape-string-regexp@1.0.5
+  │ └─┬ supports-color@5.5.0
+  │   └── has-flag@3.0.0
+  ├─┬ figures@2.0.0
+  │ └── escape-string-regexp@1.0.5 deduped
+  └─┬ pkg-conf@2.1.0
+    ├─┬ find-up@2.1.0
+    │ └─┬ locate-path@2.0.0
+    │   ├─┬ p-locate@2.0.0
+    │   │ └─┬ p-limit@1.3.0
+    │   │   └── p-try@1.0.0
+    │   └── path-exists@3.0.0
+    └─┬ load-json-file@4.0.0
+      ├── graceful-fs@4.2.8
+      ├─┬ parse-json@4.0.0
+      │ ├─┬ error-ex@1.3.2
+      │ │ └── is-arrayish@0.2.1
+      │ └── json-parse-better-errors@1.0.2
+      ├── pify@3.0.0
+      └── strip-bom@3.0.0
+```
 
