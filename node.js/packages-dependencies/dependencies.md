@@ -229,7 +229,7 @@ Fundamentalmente está compuesto por 3 números separados por puntos.
 
 La razón de que se actualice el número de versión es para indicar que hubo cambios en el paquete.
 
-### Tipos de cambio
+### Versionamiento
 
 * **Major:** Cambios que rompen una API o es incompatible con versiones anteriores.
 * **Minor:** Indica que hubieron cambios de extensión de funcionalidades, pero garantizando retrocompatibilidad, no debería de afectar el paquete.
@@ -243,4 +243,17 @@ Por predeterminado **`npm install`** utiliza el prefijo circunflejo o signo de i
 | Virgulilla \(~\) | 1.0 - 1.0.x - ~1.0.1 | Patch release | Compatibilidad con versiones anteriores; la solución de errores \(bugs\). |
 | Circunflejo \(^\) | 1.x.x \(1.minor.patch\) | Minor release | No es lo mismo ^0.0.0 con 0.x.x, en npm existen ciertos rangos como ^1.2.3 ^0.2.5 ^0.0.4; compatibilidad con versiones anteriores y nuevas funcionalidades. |
 |  | \* - x | Major release | Incrementa el primer dígito, y resetea los demás a 0; cambios disruptivos sin garantizar compatibilidad con versiones anteriores. |
+
+### Especificación
+
+1. Software que utilicen el versionamiento semántico debe declararse como una API pública.
+2. No deben ser enteros negativos, ni contener ceros iniciales, cada elemento debe incrementar numéricamente.
+3. Una vez versionado el paquete, no puede modificarse, para ello debe generarse una nueva versión.
+4. Para iniciar la fase de desarrollo, considerar la versión major \(0.x.x\) y no se debe considerar una versión estable.
+5. Después de publicar la primer versión estable \(1.0.0\), el incremento de los elementos \(1.x.x\) dependen de los cambios que se hagan.
+6. La versión Patch \(major.x.x &gt; 0\), debe incrementar con la solución de errores \(bugs\) que sean compatibles con la versión.
+7. La versión Minor, debe incrementar, si hay nuevas funcionalidades o si alguna funcionalidad se marcó como obsoleto \(deprecated\), hay que considerar el reseteo del elemento Patch a 0.
+8. La versión Major, debe incrementar si hay cambios incompatibles, los elementos Minor y Patch se deben resetear a 0.
+
+
 
