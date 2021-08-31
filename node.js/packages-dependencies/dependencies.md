@@ -231,7 +231,7 @@ La razón de que se actualice el número de versión es para indicar que hubo ca
 
 ### Tipos de cambio
 
-* **Major:** Cambios que rompen una API o comportamiento del paquete.
+* **Major:** Cambios que rompen una API o es incompatible con versiones anteriores.
 * **Minor:** Indica que hubieron cambios de extensión de funcionalidades, pero garantizando retrocompatibilidad, no debería de afectar el paquete.
 * **Patch:** Corrección de errores \(bugs\).
 
@@ -240,7 +240,7 @@ Por predeterminado **`npm install`** utiliza el prefijo circunflejo o signo de i
 | Símbolo | Versiones | Etapa | Observaciones |
 | :--- | :--- | :--- | :--- |
 |  | 1.0.0 | Primer release | Inicia con 1.0.0 |
-| Virgulilla \(~\) | 1.0 - 1.0.x - ~1.0.1 | Patch release | Compatibilidad con versiones anteriores y la solución de errores \(bug\). |
-| Circunflejo \(^\) | 1.x.x \(1.minor.patch\) | Minor release | No es lo mismo ^0.0.0 con 0.x.x, en npm existen ciertos rangos como ^1.2.3 ^0.2.5 ^0.0.4, compatibilidad con versiones anteriores y nuevas funcionalidades. |
+| Virgulilla \(~\) | 1.0 - 1.0.x - ~1.0.1 | Patch release | Compatibilidad con versiones anteriores; la solución de errores \(bugs\). |
+| Circunflejo \(^\) | 1.x.x \(1.minor.patch\) | Minor release | No es lo mismo ^0.0.0 con 0.x.x, en npm existen ciertos rangos como ^1.2.3 ^0.2.5 ^0.0.4; compatibilidad con versiones anteriores y nuevas funcionalidades. |
 |  | \* - x | Major release | Incrementa el primer dígito, y resetea los demás a 0; cambios disruptivos sin garantizar compatibilidad con versiones anteriores. |
 
