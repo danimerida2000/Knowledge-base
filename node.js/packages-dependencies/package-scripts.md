@@ -28,3 +28,7 @@ Le delegamos a **standard** para que corrija nuestro código automáticamente:
 
 Si observamos la imagen anterior, **standard** corrigió la mayoría de sugerencias de cambio en nuestro código, pero no pudo corregir la que definimos en la línea 3.
 
+{% hint style="info" %}
+**npm run test** y **npm run start** tienen un alias que corresponden a **npm test** y **npm start,** no podemos hacer lo mismo con scripts personalizados, como por ejemplo, ~~**npm run lint**~~.
+{% endhint %}
+
