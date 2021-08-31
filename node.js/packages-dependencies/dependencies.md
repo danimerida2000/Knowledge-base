@@ -255,5 +255,5 @@ Por predeterminado **`npm install`** utiliza el prefijo circunflejo o signo de i
 7. La versión Minor, debe incrementar, si hay nuevas funcionalidades o si alguna funcionalidad se marcó como obsoleto \(deprecated\), hay que considerar el reseteo del elemento Patch a 0.
 8. La versión Major, debe incrementar si hay cambios incompatibles, los elementos Minor y Patch se deben resetear a 0.
 
-
+**Ejemplos**: [https://regex101.com/r/vkijKf/1/](https://regex101.com/r/vkijKf/1/)
 
