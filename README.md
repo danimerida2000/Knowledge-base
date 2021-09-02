@@ -35,6 +35,14 @@ description: >-
 
 {% page-ref page="node.js/hands-on-approach-javascript/" %}
 
+{% page-ref page="node.js/packages-dependencies/" %}
+
+{% page-ref page="node.js/module-system.md" %}
+
+{% page-ref page="node.js/asynchronous-control-flow/" %}
+
+
+
 ### **Oauth 2.0 / OpenID Connect**
 
 {% page-ref page="oauth-2.0-and-openid-connect/lets-take-a-look.md" %}
