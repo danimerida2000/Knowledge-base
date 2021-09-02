@@ -38,6 +38,7 @@
   * [Inicializando paquetes](node.js/packages-dependencies/initializing-package.md)
   * [Dependencias](node.js/packages-dependencies/dependencies.md)
   * [Package scripts](node.js/packages-dependencies/package-scripts.md)
+* [Sistema de módulos](node.js/module-system.md)
 
 ## OAuth 2.0 / OpenID Connect <a id="oauth-2.0-and-openid-connect"></a>
 
