@@ -1,4 +1,15 @@
+---
+description: >-
+  Node.js se ejecuta del lado del servidor y javascript es un lenguaje impulsado
+  por eventos, eso quiere decir que la ejecución del código no es secuencial. En
+  esta sección evaluaremos flujos de control
+---
+
 # Flujo de control asíncrono
+
+## 
+
+## 
 
 ## Objetivos
 
