@@ -7,10 +7,6 @@ description: >-
 
 # Flujo de control asíncrono
 
-## 
-
-## 
-
 ## Objetivos
 
 * Comprender las primitivas asíncronas.
