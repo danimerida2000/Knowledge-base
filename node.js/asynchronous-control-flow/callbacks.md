@@ -39,7 +39,7 @@ Desarrollaremos un lector de archivos con ejecución paralela.
 const { readFile } = require('fs') // Módulo de gestión de archivos
 const Path = require('path') // Módulo para trabajar con rutas de archivos y directorios.
 
-const getFileContent = (err, content) => {
+const fileContent = (err, content) => {
   if(err){
     console.error(err)
     return
@@ -47,10 +47,35 @@ const getFileContent = (err, content) => {
   console.log(content.toString()) // Mostramos en pantalla el contenido del archivo
 }
 
-readFile(Path.join(__dirname, 'bigFile.txt'), getFileContent)
-readFile(Path.join(__dirname, 'mediumFile.txt'), getFileContent)
-readFile(Path.join(__dirname, 'smallFile.txt'), getFileContent)
+readFile(Path.join(__dirname, 'bigFile.txt'), fileContent)
+readFile(Path.join(__dirname, 'mediumFile.txt'), fileContent)
+readFile(Path.join(__dirname, 'smallFile.txt'), fileContent)
 ```
 
 Si observamos el fragmento de código de la línea 12 a 14, primero imprimirá el contenido del archivo **smallFile.txt** y de último el contenido del archivo **bigFile.txt**, ya que la ejecución no es en serie, eso quiere decir, que no esperará que finalice de ejecutar la instrucción, si no continuará.
+
+## Ejecución serial
+
+Tomaremos como referencia el ejemplo anterior y lo adecuamos para mostrar la ejecución serial:
+
+```javascript
+const { readFile } = require('fs') // Módulo de gestión de archivos
+const Path = require('path') // Módulo para trabajar con rutas de archivos y directorios.
+
+const fileContent = (err, content) => {
+  if(err){
+    console.error(err)
+    return
+  }
+  console.log(content.toString()) // Mostramos en pantalla el contenido del archivo
+}
+
+readFile(Path.join(__dirname, 'smallFile.txt'), (err, content) => {
+  fileContent(err, content)
+  readFile(Path.join(__dirname, 'mediumFile.txt'), (err, content) => {
+    fileContent(err, content)
+    readFile(Path.join(__dirname, 'bigFile.txt'), fileContent)
+  })
+})
+```
 
