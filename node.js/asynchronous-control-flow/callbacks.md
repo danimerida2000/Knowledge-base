@@ -31,5 +31,7 @@ for i in {1..100000}; do echo 'test'; done >> bigFile.txt
 {% endtab %}
 {% endtabs %}
 
+![Archivos creados](../../.gitbook/assets/image%20%2828%29.png)
+
 
 
