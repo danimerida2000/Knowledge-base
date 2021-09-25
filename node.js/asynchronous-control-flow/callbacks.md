@@ -33,5 +33,24 @@ for i in {1..100000}; do echo 'test'; done >> bigFile.txt
 
 ![Archivos creados](../../.gitbook/assets/image%20%2828%29.png)
 
+Desarrollaremos un lector de archivos con ejecución paralela.
 
+```javascript
+const { readFile } = require('fs') // Módulo de gestión de archivos
+const Path = require('path') // Módulo para trabajar con rutas de archivos y directorios.
+
+const getFileContent = (err, content) => {
+  if(err){
+    console.error(err)
+    return
+  }
+  console.log(content.toString()) // Mostramos en pantalla el contenido del archivo
+}
+
+readFile(Path.join(__dirname, 'bigFile.txt'), getFileContent)
+readFile(Path.join(__dirname, 'mediumFile.txt'), getFileContent)
+readFile(Path.join(__dirname, 'smallFile.txt'), getFileContent)
+```
+
+Si observamos el fragmento de código de la línea 12 a 14, primero imprimirá el contenido del archivo **smallFile.txt** y de último el contenido del archivo **bigFile.txt**, ya que la ejecución no es en serie, eso quiere decir, que no esperará que finalice de ejecutar la instrucción, si no continuará.
 
